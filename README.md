@@ -12,5 +12,5 @@ This means you can very easily add more remote desktop servers either on the sam
 
 $ lxc copy cn1 cn2 
 
-Please refer to the README.pdf file for documentation on installation and use.
+Please refer to the README.pdf file for more complete documentation on installation and use.
  
