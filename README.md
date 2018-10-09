@@ -2,7 +2,7 @@
 CIAB Remote Desktop v1.0 
 
 Pre-reqs:  
-Fresh Ubuntu 18.04 server or a VM
+Fresh Ubuntu 18.04 server or VM
 The ciab-remote-desktop installation scripts.
 sudo privileges
  
