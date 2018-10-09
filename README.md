@@ -8,5 +8,9 @@ sudo privileges
  
 With this update the CIAB Remote Desktop components all run in LXD Containers which means Guacamole, NGINX, Tomcat8, XRDP, XFreeRDP and the Ubuntu MATE desktop environment.
 
+This means you can very easily add more remote desktop servers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN container:
+
+$ lxc copy cn1 cn2 
+
 Please refer to the README.pdf file for documentation on installation and use.
  
