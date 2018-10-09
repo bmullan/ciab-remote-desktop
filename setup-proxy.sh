@@ -2,27 +2,35 @@
 
 #============================================================================
 # setup-proxy.sh
-# Purpose:  This script needs to be edited by the ciab-guacamole installer 
-# 
-# REMEMBER to change the HostIP= to what your LXD HOST IP is BEFORE you 
-#          execute this script.
+# Purpose:  This script needs to be edited by the ciab-guacamole installer
+#
+# IMPORTANT:
+#
+# Change X.X.X.X to the HOST IP address
+# Change Y.Y.Y.Y to the IP address of the CIAB-GUAC container
+#
+# Then:
+#      execute this script.
 #============================================================================
 
+HostIP="X.X.X.X"
+ciab_guacIP="Y.Y.Y.Y"
 
-HostIP= 
-ciab-guacIP="$(lxc list -c4 --format csv ciab-guac | cut -d' ' -f1)"
+HOST_IpAndPort=tcp:"$HostIP":443
 
-HOST_IpAndPort=tcp:$HostIP:443 
 CONTAINER_name=ciab-guac
+
 CONTAINER_interface=eth0
-CONTAINER_IpAndPort=tcp:$ciab-guacIP:443
+
+CONTAINER_IpAndPort=tcp:"$ciab_guacIP":443
+
 CONTAINER_proxyDeviceName=ProxyHost443Container443
 
 CONTAINER_Ip="$(echo ${CONTAINER_IpAndPort} | cut -d: -f2)"
-# the above results in an IP like 10.151.234.74.  yours will be different
 
 #---------------------------------------------------------------
 # stop the ciab-guac container so we can setup a proxy for HTTPS
+
 lxc stop ciab-guac
 
 lxc config device override "${CONTAINER_name}" "${CONTAINER_interface}" ipv4.address="${CONTAINER_Ip}"
