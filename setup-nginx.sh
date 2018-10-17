@@ -89,24 +89,7 @@ sudo service nginx restart
 
 clear
 
-echo
-echo
-echo "====================================================================================="
-echo "                The installation of NGINX is complete!"
-echo 
-echo " Now you need to reboot your Server NOW before proceeding with the rest of the"
-echo " CIAB Remote Desktop installation steps/scripts."
-echo 
-echo " Use the command ->   sudo shutdown -r now"
-echo
-echo " After the system reboots change directory back to /opt/ciab and then execute the"
-echo " command:"
-echo 
-echo "          $ sudo ./setup-ciab.sh"
-echo
-echo "====================================================================================="
-echo
-echo
+
 
 
 
