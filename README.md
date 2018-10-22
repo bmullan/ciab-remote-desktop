@@ -2,9 +2,9 @@
 CIAB Remote Desktop v1.0 
 
 Pre-reqs:  
-1 - Fresh Ubuntu 18.04 server (cloud or local) or VM
-2 - The ciab-remote-desktop installation scripts.
-3 - sudo privileges on that server
+1 - Fresh Ubuntu 18.04 server (cloud or local) or VM  
+2 - The ciab-remote-desktop installation scripts.  
+3 - sudo privileges on that server  
  
 With this update the CIAB Remote Desktop components ALL run in LXD Containers which means Guacamole, MySQL, NGINX, Tomcat8, XRDP, XFreeRDP and the Ubuntu MATE desktop environment.
 
@@ -18,8 +18,8 @@ Depending on the Host Server's number of CPU core, Memory capacity and storage y
 
 For example, on AWS EC2 the largest Virtual Machine you can spin up today approximates this:
 
-Instance Type 	vCPU 	Memory (GiB) 	 Storage (GB) 	Network Speed   Physical Processor
-d2.8xlarge    	 36 	  244GBytes 	    24 x 2TByte 	  10 Gigabit 	  Intel Xeon E5-2676 v3
+> Instance Type 	vCPU 	Memory (GiB) 	 Storage (GB) 	Network Speed   Physical Processor
+> d2.8xlarge    	 36 	  244GBytes 	    24 x 2TByte 	  10 Gigabit 	  Intel Xeon E5-2676 v3
 
 As you can infer from the above, configuring ciab-desktop on such a server could potentially support hundreds of cnX Ubuntu-Mate Desktop containers, each with perhaps dozens of "users" by the Guacamole/CIAB admin of the Server/Host.
 
