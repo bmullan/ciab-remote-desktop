@@ -34,6 +34,8 @@ clear
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+#
+# All Guacamole Source Code is Apache License, Version 2.0.
 #================================================================================================================
 
 # set location where the installation files were placed when they were UNTarred.  If you put them somewhere 
