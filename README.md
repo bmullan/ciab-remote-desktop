@@ -23,11 +23,11 @@ For example, on AWS EC2 the largest Virtual Machine you can spin up today approx
 
 As you can infer from the above, configuring ciab-desktop on such a server could potentially support hundreds of cnX Ubuntu-Mate Desktop containers, each with perhaps dozens of "users" by the Guacamole/CIAB admin of the Server/Host.
 
-You have the choice of either:
+**You have the choice of either:**
 
-downloading the install-all.tar.xz 
+**downloading the install-all.tar.xz** 
 -or-  
-download the individual script file sources.  
+**download the individual script file sources.**  
 
 the install-all is just a tar file of all the same script files and is just intended to save you time.
 
