@@ -25,7 +25,7 @@ As you can infer from the above, configuring ciab-desktop on such a server could
 
 **You have the choice of either:**
 
-**downloading the install-all.tar.xz** 
+**downloading the install-all.tar.xz**  
 -or-  
 **download the individual script file sources.**  
 
