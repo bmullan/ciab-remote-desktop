@@ -12,9 +12,9 @@ Installation time depends on the chosen Server/Host's number/type of CPU, amount
 
 *NOTE:  As an example, on a Server with 4 core, 16GB ram and an SSD disk drive the installation will take between 30-45 minutes.*
 
-This means you can very easily add more remote desktop servers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
+After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
 
-$ lxc copy cn1 cn2 
+> $ lxc copy cn1 cn2 
 
 This 1.0.1 version also utilizes the recently added new Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container.
 
