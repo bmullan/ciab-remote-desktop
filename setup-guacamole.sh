@@ -19,7 +19,7 @@ clear
 # Updated 03-Feb-2016
  
 #=================================================================================
-# Copyright (c) 2016-2018 Brian Mullan
+# Copyright (c) 2016-2018 Brian Mullan 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -38,6 +38,8 @@ clear
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+#
+# All Guacamole code is under Apache 2 license (see guacamole website)
 #=================================================================================
 
 
