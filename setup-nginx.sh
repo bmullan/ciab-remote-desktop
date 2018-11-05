@@ -15,7 +15,7 @@ sudo apt install nginx -y
 sudo ufw delete allow 8080
 
 # make a directory to hold SSL certs
-sudo mkdir /etc/nginx/ssl 
+sudo mkdir /etc/nginx/ssl  
 
 # Define variables
 
