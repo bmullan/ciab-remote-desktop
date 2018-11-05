@@ -32,7 +32,7 @@ deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
 ## N.B. software from this repository may not have been tested as
 ## extensively as that contained in the main release, although it includes
 ## newer versions of some applications which may provide useful features.
-## Also, please note that software in backports WILL NOT receive any review
+## Also, please note that software in backports WILL NOT receive any review 
 ## or updates from the Ubuntu security team.
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-backports main universe multiverse restricted
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
