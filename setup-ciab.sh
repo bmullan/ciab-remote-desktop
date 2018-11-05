@@ -34,6 +34,8 @@ clear
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+#
+# All Guacamole code is Apache 2 Copyright as described on the Guacamole website.
 #================================================================================================================
 
 # set location where the installation files were placed when they were UNTarred.  If you put them somewhere 
