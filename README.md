@@ -1,5 +1,5 @@
 # ciab-remote-desktop
-CIAB Remote Desktop v1.0.1 
+CIAB Remote Desktop current version - v1.0.1 
 
 Pre-reqs:  
 1 - Fresh Ubuntu 18.04 server (cloud or local) or VM  
