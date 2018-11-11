@@ -5,7 +5,15 @@ Pre-reqs:
 1 - Fresh Ubuntu 18.04 server (cloud or local) or VM  
 2 - The ciab-remote-desktop installation scripts.  
 3 - sudo privileges on that server  
- 
+
+There are 2 YouTube video's regarding CIAB:
+
+[CIAB Remote Desktop Part 1 - Installation](https://www.youtube.com/watch?v=d361lS0FH8Y&t=1070s)
+
+and
+
+[CIAB Remote Desktop Part 2 - Configuration and Use](https://www.youtube.com/watch?v=dotc5I2z9mI)
+
 With this update the CIAB Remote Desktop components ALL run in LXD Containers which means Guacamole, MySQL, NGINX, Tomcat8, XRDP, XFreeRDP and the Ubuntu MATE desktop environment.
 
 Installation time depends on the chosen Server/Host's number/type of CPU, amount of RAM and type of disk (SSD or spinning).  
