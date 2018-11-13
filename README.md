@@ -38,7 +38,7 @@ For example, on AWS EC2 one of the larger Virtual Machine Instances you can spin
 
 As you can infer from the above, configuring ciab-desktop on such a server could potentially support many dozens of cnX Ubuntu-Mate Desktop containers, each with perhaps dozens of "users" by the Guacamole/CIAB admin of the Server/Host.
 
-**You have the choice of either:**
+*To get the source scripts & documentation you have the choice of either:*
 
 **downloading the install-all.tar.xz**  
 -or-  
