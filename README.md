@@ -15,7 +15,7 @@ and
 
 [CIAB Remote Desktop Part 2 - Configuration and Use](https://www.youtube.com/watch?v=dotc5I2z9mI)
 
-With this update the CIAB Remote Desktop components ALL run in LXD Containers which means Guacamole, MySQL, NGINX, Tomcat8, XRDP, XFreeRDP and the Ubuntu MATE desktop environment.
+With this update the CIAB Remote Desktop components A**all** run in LXD Containers which means Guacamole, MySQL, NGINX, Tomcat8, XRDP, XFreeRDP and the Ubuntu MATE desktop environment.
 
 Installation time depends on the chosen Server/Host's number/type of CPU, amount of RAM and type of disk (SSD or spinning).  
 
