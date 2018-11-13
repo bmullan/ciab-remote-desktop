@@ -104,7 +104,7 @@ echo
 echo
 read -p "Press any key to continue..."
 echo
-echo
+echo 
 
 lxd init
 newgrp lxd
