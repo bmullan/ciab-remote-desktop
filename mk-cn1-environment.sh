@@ -36,8 +36,6 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-#
-# All Guacamole code is Apache 2 Copyright as described on the Guacamole website.
 #========================================================================================================================
 
 #
@@ -82,7 +80,7 @@ sudo apt install nasm xserver-xorg-dev fuse git -y
 
 #Install miscellaneous
 
-sudo apt install pulseaudio pulseaudio-module-zeroconf alsa-base alsa-utils linux-sound-base gstreamer1.0-pulseaudio gstreamer1.0-alsa libpulse-dev libvorbis-dev -y
+sudo apt install net-tools pulseaudio pulseaudio-module-zeroconf alsa-base alsa-utils linux-sound-base gstreamer1.0-pulseaudio gstreamer1.0-alsa libpulse-dev libvorbis-dev -y
 
 echo "Installing Ubuntu-MATE desktop environment as default for Guacamole RDP User to work with."
 echo
@@ -120,8 +118,7 @@ sudo update-alternatives --set x-session-manager /usr/bin/mate-session
 #        to make a small edit of the /etc/xrdp/sysman.ini file.  
 #
 #        Comment out the last 2 lines of /etc/xrdp/sysman.ini and add the budgie-desktop line as follows:
-#-----------------------------------------------------------------------------------------------------------
-
+#
 #        # test -x /etc/X11/Xsession && exec /etc/X11/Xsession
 #        # exec /bin/sh /etc/X11/Xsession
 #        budgie-desktop
@@ -151,7 +148,7 @@ sudo ufw allow 8080        # http
 sudo ufw allow https       
 sudo ufw allow 3389        # rdp
 sudo ufw allow 4822        # guacd
-sudo ufw allow 4713        # pulseaudio
+#sudo ufw allow 4713        # pulseaudio
 sudo ufw allow 5353        # avahi
 
 #============================================================================================================
@@ -190,9 +187,9 @@ popd
 #       I guess it doesn't remove whatever this critical setting is  ???? go figure ???
 
 sudo apt install flashplugin-installer -y
-sudo apt install chromium-browser adobe-flashplugin -y
-sudo apt remove firefox -y
-
+sudo apt install chromium-browser -y
+sudo apt remove flashplugin-installer firefox -y
+sudo apt install adobe-flashplugin adobe-flash-properties-gtk -y
 
 #==============================================================================================================================================
 # in order for all new users added to this server via sudo adduser xxx in the future we need to change the /etc/adduser.conf file
@@ -211,13 +208,6 @@ sudo sed -i 's/#EXTRA_GROUPS="dialout cdrom floppy audio video plugdev users"/EX
 # make the 2nd change
 sudo sed -i 's/#ADD_EXTRA_GROUPS=1/ADD_EXTRA_GROUPS=1/' /etc/adduser.conf
 
-# make sure the "installing" user is a member of audio/pulse/pulse-access groups
-# any users added later via the CLI by the Admin will automatically be added to these "groups"
-
-#sudo adduser $userID pulse
-#sudo adduser $userID pulse-access
-#sudo adduser $userID audio
-
 #=======================================
 # Clean up some things before exiting...
 
@@ -235,5 +225,4 @@ sudo apt autoremove -y
 clear
 
 exit 0
-
 
