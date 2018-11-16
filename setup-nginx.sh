@@ -15,7 +15,7 @@ sudo apt install nginx -y
 sudo ufw delete allow 8080
 
 # make a directory to hold SSL certs
-sudo mkdir /etc/nginx/ssl  
+sudo mkdir /etc/nginx/ssl 
 
 # Define variables
 
@@ -35,10 +35,12 @@ sudo service nginx stop
 # save current nginx config so we can add ours
 sudo mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bkp
 
+# delete the 'default' file as a new one will be created
 sudo rm /etc/nginx/sites-enabled/default
 
-#========================================================================  
-# Add proxy settings to nginx config file (note the occasional backslash)
+#==============================================================================================  
+# Add proxy settings to nginx config file (note the occasional backslash used to escape the "$"
+# character so "$" gets copied to the resulting file
 
 sudo cat <<EOF1 > /etc/nginx/sites-available/guacamole
 # Accept requests via HTTP (TCP/80), but obligate all clients to use HTTPS (TCP/443)
@@ -63,20 +65,21 @@ server {
   ssl_ciphers         HIGH:!aNULL:!MD5;
 
   location / {
-      proxy_buffering off;
+      # entries here are modeled after the apache guacamole web page for nginx proxy
+      # https://guacamole.apache.org/doc/gug/proxying-guacamole.html
       proxy_pass  http://127.0.0.1:8080;
-
+      proxy_buffering off;
       # This is required to get WebSocket working
       proxy_http_version  1.1;
-
-      # note:   
-      # the "\" in the next line is an escape character which should not appear in the installed /etc/nginx/sites-enabled/default file
-      # but is placed here in the script to insure that the text "$http_upgrade" DOES get included in the final "default" file
-
+      #------------------------------------------------------------------------------------
+      # NOTE: because we are using "sudo cat <<EOF1" to create this file entry (see above)
+      # we need to escape the "$" so it gets included in the output to the target file
+      #------------------------------------------------------------------------------------
+      proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
       proxy_set_header    Upgrade    \$http_upgrade;
       proxy_set_header    Connection "upgrade";
- 
-      # Logging access to Guacamole 'doesn't make sense' (but may be useful for debugging)
+      # Logging access to Guacamole 'doesn't make sense' so we leave this OFF but note that
+      # it at some times might be useful for debugging purposes
       access_log  off;
   }
 }
@@ -86,8 +89,6 @@ sudo ln -s /etc/nginx/sites-available/guacamole /etc/nginx/sites-enabled/guacamo
 
 # restart nginx
 sudo service nginx restart
-
-clear
 
 
 
