@@ -40,9 +40,7 @@ For example, on AWS EC2 one of the larger Virtual Machine Instances you can spin
 
 As you can infer from the above, configuring ciab-desktop on such a server could potentially support many dozens of cnX Ubuntu-Mate Desktop containers, each with perhaps dozens of "users" by the Guacamole/CIAB admin of the Server/Host.
 
-*If you download the source using GitHub’s ZIP file format the resulting archive will be called - “ciab-remote-desktop-master.zip”*
-
-The "**ciab-remote-desktop-master.zip**" will contain of all the same script files & the documentation PDF.
+_If you download the Installation script source files and the CIAB-README.pdf documenation file using GitHub’s ZIP file format the resulting archive will be called - “**ciab-remote-desktop-master.zip**”_
 
 > NOTE:  *In mk-cn1-environment.sh there are commented-out sections that show what you need to do if you'd prefer a Desktop Environment (DE) other than Ubuntu-Mate.   Included are xubuntu (xfce4) and budgie DE.*
 
