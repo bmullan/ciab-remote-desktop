@@ -31,7 +31,7 @@ This 1.0.1 version also utilizes the recently added new Device Proxy capability 
 
 Since ciab-guac resides on the same private/internal 10.x.x.x subnet as the cn1 container and any additional containers you clone from the original cn1.   
 
-Depending on the Host Server's number of CPU core, Memory capacity and storage you could potentially have dozens or hundreds of cnX containers, each with its own Ubuntu-Mate Desktop.   This means that remote users can also be configured to potentially access and use any of those dozens or hundreds of cnX Ubuntu-Mate Desktops by the Guacamole admin.
+Depending on the Host Server's number of CPU core, Memory capacity and storage you could potentially have dozens or hundreds of cnX containers, each with its own Ubuntu-Mate Desktop.   This means that remote users can also be configured to potentially access and use any of those dozens of cnX Ubuntu-Mate Desktops by the Guacamole admin.
 
 For example, on AWS EC2 one of the larger Virtual Machine Instances you can spin up today approximates this:
 
