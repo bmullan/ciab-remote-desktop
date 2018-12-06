@@ -23,7 +23,7 @@ With this update the CIAB Remote Desktop components **all** run in LXD Container
 
 Installation time depends on the chosen Server/Host's number/type of CPU, amount of RAM and type of disk (SSD or spinning).  
 
-*NOTE:  As an example, on a Server with 4 core, 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.*
+> *NOTE:  As an example, on a Server with 4 core, 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.*
 
 After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
 
