@@ -9,7 +9,7 @@ Pre-reqs:
 2 - The ciab-remote-desktop installation scripts.  
 3 - sudo privileges on that server  
 
-> *Note:  A recent addition to the CIAB Remote Desktop [are the CIAB Web Applications](https://github.com/bmullan/ciab-web-applications).    These are a large group of Web based applications that can be installed in LXD containers on the same Host/Server as the CIAB Remote Desktop itself.*
+> *Note:  A recent addition to the CIAB Remote Desktop [are the CIAB Web Applications](https://github.com/bmullan/ciab-web-applications).    These are a large group of Web based applications that can be installed in LXD containers on the same Host/Server as the CIAB Remote Desktop itself.  Each selected application is installed in a "nested" LXD container inside the ciab-guac LXD container.   This allows the backup or copy of all installed Web Applications just by copying or backing up the ciab-guac container itself.*
 
 There are 2 YouTube video's regarding CIAB:
 
