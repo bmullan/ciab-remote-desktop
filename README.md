@@ -20,7 +20,7 @@ and
 [CIAB Remote Desktop Part 2 - Configuration and Use](https://www.youtube.com/watch?v=dotc5I2z9mI)
 
 **Important Note:**  
-> In this repository is a file called *CIAB System Architecture Mindmap.pdf*.   If you download that PDF you can click on any 
+> In this repository is a file called _**CIAB System Architecture Mindmap.pdf**_.   If you download that PDF you can click on any 
 > bubble that has a small link icon in it to drill down/up in the map for further information.   At the CIAB Applications level 
 > each Application bubble has a link icon and if you click on that bubble you will be taken to the Documentation webpage for that > particular Web Application.  
 
