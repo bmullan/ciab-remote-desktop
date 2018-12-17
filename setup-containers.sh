@@ -241,6 +241,11 @@ echo
 lxc start ciab-guac
 lxc start cn1
 
+# for future possible use of CIAB Web Applications we want
+# to set ciab-guac to allow nested LXD containers
+
+ lxc config set ciab-guac security.nesting true
+
 echo
 
 # finally create the Symbolic LINK for freerdp to guacamole freerdp sound driver
