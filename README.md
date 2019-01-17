@@ -68,7 +68,7 @@ After installation you can very easily add more remote desktop server containers
 
 This 2.0 version also utilizes the recently added new Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container.
 
-Since ciab-guac resides on the same private/internal 10.x.x.x subnet as the cn1 container and any additional containers you clone from the original cn1.   
+Since ciab-guac resides on the same private/internal 10.x.x.x subnet as the cn1 container and any additional containers you clone from the original cn1, they can all inter-communicate with one another.   Also, any CIAB Web Applications the Admin installs will also be attached to this same 10.x.x.x network allowing validated CIAB Users logged into the Mate Desktop on CN1 to use their browser to access those applications.
 
 Depending on the Host Server's number of CPU core, Memory capacity and storage you could potentially have dozens or hundreds of cnX containers, each with its own Ubuntu-Mate Desktop.   This means that remote users can also be configured to potentially access and use any of those dozens of cnX Ubuntu-Mate Desktops by the Guacamole admin.
 
@@ -240,13 +240,11 @@ ___
 **Pre-requisite**  
 An existing CIAB Remote Desktop System Installation on an Ubuntu 18.04 VM/Physical Server/Cloud instance **Host** is required for installation of the CIAB Web Applications.   
 
-The CIAB Admin (person who installed the CIAB Remote Desktop System) when they use Guacamole to log into the CIAB-GUAC container's MATE desktop will find a new ICON on their Desktop.
+The CIAB Admin (person who installed the CIAB Remote Desktop System) when they use Guacamole to log into the CIAB-GUAC container's MATE desktop will find a new ICON on their Desktop named:
 
-> **ciab-apps-install.sh**  
+> **CIAB Web Applications Installer**  
 
-To install one or more of the CIAB Web Applications the Admin needs to click on the **ciab-apps-install.sh** icon.
-
-**IMPORTANT**: When prompted, **select RUN IN TERMINAL**.   This *will present you with a GUI menu* with the current list of CIAB Applications you can install.   Simply *select* all of the applications you wish to install and then press the **Install** button.
+To install one or more of the CIAB Web Applications the Admin needs to click on the **CIAB Web Applications Installer** icon.
 
 **Each** web application's installation can take up to 5 minutes.  So be patient as there may be times where there will seem to be no activity for upto 60 seconds or so.
 
@@ -256,8 +254,7 @@ be added in the future.
 
 Each selected application will be installed into its own LXD container _**nested**_ in the **ciab-guac** container.
 
-Each of those Web Application Containers will be attached to the same lxdbr0 bridge via the ETH0 interface of the **ciab-guac**
-container and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
+Each of those Web Application Containers will be attached to the same lxdbr0 bridge via the ETH0 interface of the **ciab-guac** container and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
 
 After applications have been installed you can:  
 
