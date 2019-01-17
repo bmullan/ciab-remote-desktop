@@ -10,7 +10,7 @@
 
 *Pre-reqs:*  
 1 - Fresh Ubuntu 18.04 server (cloud or local) or VM  
-2 - The ciab-remote-desktop installation scripts.  
+2 - The Ciab Remote Desktop system files contained in this GitHub repository which include all of the installation scripts.  
 3 - sudo privileges on that server  
 
 **NOTE**:  With CIAB Remote Desktop System v2.0 we introduce several major enhancements!
