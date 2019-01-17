@@ -2,6 +2,10 @@
 
 # CIAB Remote Desktop System v2.0 
 
+*The CIAB Remote Desktop System is a clientless remote desktop.  It's called clientless because no plugins or client software are required!
+
+Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud instance, all you need to access your desktops is an HTML5 web browser.*
+
 **CIAB Remote Desktop current version - v2.0** 
 
 *Pre-reqs:*  
