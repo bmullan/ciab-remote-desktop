@@ -39,9 +39,9 @@ To install one or more of those CIAB Web Apps you just have to click on that Ico
 
 > NOTE:  These applications will be installed as "**nested**" LXD containers inside the CIAB-GUAC container but they will all be attached to the **same** 10.x.x.x private network that the CIAB-GUAC and the CN1 containers are attached to.   The design of this using the "nested" LXD containers and private network has greatly enhanced the security regarding using these Web Applications as only validated users with CIAB Accounts and a login on the CN1 Mate Desktop container will have access to those web applications unless the CIAB Admin allows access from the internet via a separate configuration requirement.
 
-Read more about the CIAB Web Application later in the Section of this README title CIAB Web Applications.
+Read more about the CIAB Web Application later in the Section of this README titled "CIAB Web Applications".
 
-These are a large group of Web based applications that can be installed in LXD containers on the same Host/Server as the CIAB Remote Desktop itself.  Each selected application is installed in a "**nested**" LXD container inside the ciab-guac LXD container.   This allows the backup or copy of all installed Web Applications just by copying or backing up the ciab-guac container itself.*
+These are a large group of Web based applications.  Each selected application is installed in a "**nested**" LXD container inside the ciab-guac LXD container.   This allows the backup or copy of all installed Web Applications just by copying or backing up the ciab-guac container itself!*
 
 There are 2 YouTube video's regarding CIAB:
 
