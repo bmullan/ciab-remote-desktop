@@ -258,7 +258,7 @@ be added in the future.
 
 Each selected application will be installed into its own LXD container _**nested**_ in the **ciab-guac** container.
 
-> **NOTE**: NextCloud is an exception to this.  Due to a bug with AppArmor and "nested" AppArmor profiles we cannot install the SNAP version of NextCloud in a "nested" container as with the other applications.   So NextCloud is installed in an LXD container called "nextcloud" Host/Server and is attached to the same private 10.x.x.x network as all the other containers.   If you (ie CIAB Admin) need to delete/copy/start etc the NextCloud container you will have to ssh into the Host and execute the appropirate LXC commands there (re - lxc list nextcloud, lxc stop nextcloud etc)
+> **NOTE**: NextCloud is an exception to this.  Due to a bug with AppArmor and "nested" AppArmor profiles we cannot install the SNAP version of NextCloud in a "nested" container as with the other applications.   So NextCloud is installed in an LXD container called "nextcloud" in the Host/Server and is attached to the same private 10.x.x.x network as all the other containers.   If you (ie CIAB Admin) need to delete/copy/start etc the NextCloud container you will have to ssh into the Host and execute the appropirate LXC commands there (re - lxc list nextcloud, lxc stop nextcloud etc)
 
 Each of those Web Application Containers will be attached to the same lxdbr0 bridge via the ETH0 interface of the **ciab-guac** container and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
 
