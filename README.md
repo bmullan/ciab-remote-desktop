@@ -162,53 +162,58 @@ ___
 
 **Content Management Systems (CMS)**
 
-*Drupal* - Both Drupal and Joomla are widely used world-wide and *BOTH* have dozens and dozens of add-ons you can easily install.  
-*Joomla*
+**Drupal** - Both Drupal and Joomla are widely used world-wide and *BOTH* have *dozens and dozens of add-ons* you can easily install.  
+
+**Joomla** - see above
+
+**WordPress** - One of the most popular blogging & content management platforms worldwide.
+
 
 **Enterprise Resource Management (ERP)**
 
-*ERPNext* -  ERPNext supports manufacturing, distribution, retail, trading, services, education, 
+**ERPNext** -  ERPNext supports manufacturing, distribution, retail, trading, services, education, 
            non profits and includes Accounting, Inventory, Manufacturing, CRM, Sales, Purchase, 
            Project Management, and a Human Resource Management System (HRMS).
 
 **Learning Management Systems (LRM)**
 
-*Moodle* - Moodle is a learning platform designed to provide educators, administrators 
+**Moodle** - Moodle is a learning platform designed to provide educators, administrators 
          and learners with a single robust, secure and integrated system to create 
          personalised learning environments.  *Moodle can also be used by Businesses
          to help plan/manage Training for Employees.*  
 
 **Human Resource Management (HRM)**
 
-*OrangeHRM* - a complete open source HR management system.  
+**OrangeHRM** - a complete open source HR management system.  
 
 **Business & eCommerce**
 
-*PrestaShop* - PrestaShop is an efficient and innovative e-commerce solution with all the 
+**PrestaShop** - PrestaShop is an efficient and innovative e-commerce solution with all the 
              features you need to create an online store and grow your business.  
              
-*Mahara* - Mahara is a fully featured electronic portfolio, weblog, resume builder and social 
+**Mahara** - Mahara is a fully featured electronic portfolio, weblog, resume builder and social 
          networking system, connecting users and creating online communities. Mahara 
          provides you with the tools to set up a personal learning and development environment.  
 
-*OSClass* - online classified Ads  
+**OSClass** - online classified Ads  
 
-*Mautic* - Mautic provides free and open source marketing automation software available to 
+**Mautic** - Mautic provides free and open source marketing automation software available to 
          everyone. Free email marketing software, lead management software  
 
-*Odoo* - Odoo is a suite of web based open source business apps. The main Odoo Apps include 
+**Odoo** - Odoo is a suite of web based open source business apps. The main Odoo Apps include 
        an Open Source CRM, Website Builder, eCommerce, Warehouse Management, Project Management, 
        Billing & Accounting, Point of Sale, Human Resources  
 
-*iTop* - iTop stands for IT Operations Portal. It is a complete open source, ITIL, web based 
+**iTop** - iTop stands for IT Operations Portal. It is a complete open source, ITIL, web based 
        service management tool including a fully customizable Configuration Mangement Database (CMDB), 
        a Helpdesk system and a Document Management tool.  iTop also offers mass import tools and
        web services to integrate with your IT  
 
 **Project Management**
 
-*Open Atrium* - BOTH Open Atrium and Open Project are widely used World-Wide and either can provide comprehensive Project Management capabilities.   
-*Open Project*  
+**Open Atrium** - BOTH Open Atrium and Open Project are widely used World-Wide and either can provide comprehensive Project Management capabilities.   
+
+**Open Project**  - see above 
 
 **Social Media Systems**
 
@@ -216,25 +221,23 @@ ___
               manage notifications, create user profiles, and includes features to let communities govern themselves by voting 
               out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
 
-*Media Wiki*   
+**MediaWiki** - Mediawiki is the core of Wikipedia.  A wiki enables communities of editors and contributors to write documents collaboratively.
 
-*WordPress*  
-
-*Ghost* - blogging platform  
+**Ghost** - blogging platform  
 
 **Miscellaneous**
 
-*NextCloud* - Nextcloud is an open source, self-hosted file share and communication platform. 
+**NextCloud** - Nextcloud is an open source, self-hosted file share and communication platform. 
             Access & sync your files, contacts, calendars & communicate and collaborate.  
 
-*nuBuilder4* - A browser-based tool for developing web-based database Applications accessible from the CIAB Desktop(s). Using MySQL databases it gives users the ability to easily do database operations like... Search, Create, Insert, Read, Update, Delete. It includes low-code tools that... Drag and Drop objects, Create database queries with the SQL Builder, Create customised date and number formats with the Format Builder, Create calculated fields with the Formula Builder, Create Fast Forms, Create Fast Reports, 
+**nuBuilder4** - A browser-based tool for developing web-based database Applications accessible from the CIAB Desktop(s). Using MySQL databases it gives users the ability to easily do database operations like... Search, Create, Insert, Read, Update, Delete. It includes low-code tools that... Drag and Drop objects, Create database queries with the SQL Builder, Create customised date and number formats with the Format Builder, Create calculated fields with the Formula Builder, Create Fast Forms, Create Fast Reports, 
 
-*CiviCRM* - CiviCRM is web-based software used by a diverse range of organisations, particularly 
+**CiviCRM** - CiviCRM is web-based software used by a diverse range of organisations, particularly 
           not-for-profit organizations (nonprofits and civic sector organizations).   
 
-*Lime Survey* - Create & run Online Surveys  
+**Lime Survey** - Create & run Online Surveys.  *NOTE: to login as Lime Survey Admin goto http://<ip_addr>/admin*  
 
-*Mantis* - Mantis Defect/Problem Tracker is a free and open source, web-based tracking system.  
+**Mantis** - Mantis Defect/Problem Tracker is a free and open source, web-based tracking system.  
 
 ___
 
