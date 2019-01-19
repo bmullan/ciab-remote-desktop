@@ -252,9 +252,9 @@ To install one or more of the CIAB Web Applications the Admin needs to click on 
 
 **Each** web application's installation can take up to 5 minutes.  So be patient as there may be times where there will seem to be no activity for upto 60 seconds or so.
 
-Currently, all applications are installed using Bitnami .RUN files (https:\/\/bitnami.com\/) *except for* iTop and NuBuilder
-which are not Bitnami applications and thus require their own installation scripts.   Additional CIAB applications may
-be added in the future.
+Currently, all applications are installed using Bitnami .RUN files (https:\/\/bitnami.com\/) *except for* iTop, NextCloud and NuBuilder which are not Bitnami applications and thus require their own installation scripts.   
+
+*Additional CIAB applications will be added in the future.*
 
 Each selected application will be installed into its own LXD container _**nested**_ in the **ciab-guac** container.
 
