@@ -217,9 +217,7 @@ ___
 
 **Social Media Systems**
 
-*Discourse* - Discourse is the next-next-generation community forum platform which allows you to create categories, tag posts, 
-              manage notifications, create user profiles, and includes features to let communities govern themselves by voting 
-              out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
+**Discourse** - Discourse is the next-next-generation community forum platform which allows you to create categories, tag posts, manage notifications, create user profiles, and includes features to let communities govern themselves by voting out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
 
 **MediaWiki** - Mediawiki is the core of Wikipedia.  A wiki enables communities of editors and contributors to write documents collaboratively.
 
