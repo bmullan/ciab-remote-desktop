@@ -160,7 +160,7 @@ ___
 
 ### The current list of Applications available to be installed are of several Categories:
 
-**Content Management Systems (CMS)**
+#### **Content Management Systems (CMS)**
 
 **Drupal** - Both Drupal and Joomla are widely used world-wide and *BOTH* have *dozens and dozens of add-ons* you can easily install.  
 
@@ -169,24 +169,24 @@ ___
 **WordPress** - One of the most popular blogging & content management platforms worldwide.
 
 
-**Enterprise Resource Management (ERP)**
+#### **Enterprise Resource Management (ERP)**
 
 **ERPNext** -  ERPNext supports manufacturing, distribution, retail, trading, services, education, 
            non profits and includes Accounting, Inventory, Manufacturing, CRM, Sales, Purchase, 
            Project Management, and a Human Resource Management System (HRMS).
 
-**Learning Management Systems (LRM)**
+#### **Learning Management Systems (LRM)**
 
 **Moodle** - Moodle is a learning platform designed to provide educators, administrators 
          and learners with a single robust, secure and integrated system to create 
          personalised learning environments.  *Moodle can also be used by Businesses
          to help plan/manage Training for Employees.*  
 
-**Human Resource Management (HRM)**
+#### **Human Resource Management (HRM)**
 
 **OrangeHRM** - a complete open source HR management system.  
 
-**Business & eCommerce**
+#### **Business & eCommerce**
 
 **PrestaShop** - PrestaShop is an efficient and innovative e-commerce solution with all the 
              features you need to create an online store and grow your business.  
@@ -209,13 +209,13 @@ ___
        a Helpdesk system and a Document Management tool.  iTop also offers mass import tools and
        web services to integrate with your IT  
 
-**Project Management**
+#### **Project Management**
 
 **Open Atrium** - BOTH Open Atrium and Open Project are widely used World-Wide and either can provide comprehensive Project Management capabilities.   
 
 **Open Project**  - see above 
 
-**Social Media Systems**
+#### **Social Media Systems**
 
 **Discourse** - Discourse is the next-next-generation community forum platform which allows you to create categories, tag posts, manage notifications, create user profiles, and includes features to let communities govern themselves by voting out trolls and spammers. Discourse is built for mobile from the ground up and support high-res devices.
 
@@ -223,7 +223,7 @@ ___
 
 **Ghost** - blogging platform  
 
-**Miscellaneous**
+#### **Miscellaneous**
 
 **NextCloud** - Nextcloud is an open source, self-hosted file share and communication platform. 
             Access & sync your files, contacts, calendars & communicate and collaborate.  
@@ -257,6 +257,8 @@ which are not Bitnami applications and thus require their own installation scrip
 be added in the future.
 
 Each selected application will be installed into its own LXD container _**nested**_ in the **ciab-guac** container.
+
+> **NOTE**: NextCloud is an exception to this.  Due to a bug with AppArmor and "nested" AppArmor profiles we cannot install the SNAP version of NextCloud in a "nested" container as with the other applications.   So NextCloud is installed in an LXD container called "nextcloud" Host/Server and is attached to the same private 10.x.x.x network as all the other containers.   If you (ie CIAB Admin) need to delete/copy/start etc the NextCloud container you will have to ssh into the Host and execute the appropirate LXC commands there (re - lxc list nextcloud, lxc stop nextcloud etc)
 
 Each of those Web Application Containers will be attached to the same lxdbr0 bridge via the ETH0 interface of the **ciab-guac** container and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
 
