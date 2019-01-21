@@ -228,6 +228,9 @@ ___
 **NextCloud** - Nextcloud is an open source, self-hosted file share and communication platform. 
             Access & sync your files, contacts, calendars & communicate and collaborate.  
 
+**RStudio** - RStudio is an integrated development environment for *R, a programming language for statistical computing and 
+          graphics*. 
+
 **nuBuilder4** - A browser-based tool for developing web-based database Applications accessible from the CIAB Desktop(s). Using MySQL databases it gives users the ability to easily do database operations like... Search, Create, Insert, Read, Update, Delete. It includes low-code tools that... Drag and Drop objects, Create database queries with the SQL Builder, Create customised date and number formats with the Format Builder, Create calculated fields with the Formula Builder, Create Fast Forms, Create Fast Reports, 
 
 **CiviCRM** - CiviCRM is web-based software used by a diverse range of organisations, particularly 
