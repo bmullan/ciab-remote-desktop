@@ -84,7 +84,9 @@ _If you download the Installation script source files and the CIAB-README.pdf do
 > NOTE:  *In mk-cn1-environment.sh there are commented-out sections that show what you need to do if you'd prefer a Desktop Environment (DE) other than Ubuntu-Mate.   Included are xubuntu (xfce4) and budgie DE.*
 
 **Please refer to the CIAB-README.pdf file for more complete documentation on installation and use.**
- 
+
+---
+
 # CIAB Web Applications
 
 ![ciab-logo](https://user-images.githubusercontent.com/1682855/48973170-36d27680-f007-11e8-9241-db2dbaa74205.png)
@@ -160,6 +162,8 @@ ___
 
 ### The current list of Applications available to be installed are of several Categories:
 
+---
+
 #### **Content Management Systems (CMS)**
 
 **Drupal** - Both Drupal and Joomla are widely used world-wide and *BOTH* have *dozens and dozens of add-ons* you can easily install.  
@@ -168,12 +172,15 @@ ___
 
 **WordPress** - One of the most popular blogging & content management platforms worldwide.
 
+---
 
 #### **Enterprise Resource Management (ERP)**
 
 **ERPNext** -  ERPNext supports manufacturing, distribution, retail, trading, services, education, 
            non profits and includes Accounting, Inventory, Manufacturing, CRM, Sales, Purchase, 
            Project Management, and a Human Resource Management System (HRMS).
+
+---
 
 #### **Learning Management Systems (LRM)**
 
@@ -182,9 +189,13 @@ ___
          personalised learning environments.  *Moodle can also be used by Businesses
          to help plan/manage Training for Employees.*  
 
+---
+
 #### **Human Resource Management (HRM)**
 
 **OrangeHRM** - a complete open source HR management system.  
+
+---
 
 #### **Business & eCommerce**
 
@@ -209,11 +220,15 @@ ___
        a Helpdesk system and a Document Management tool.  iTop also offers mass import tools and
        web services to integrate with your IT  
 
+---
+
 #### **Project Management**
 
 **Open Atrium** - BOTH Open Atrium and Open Project are widely used World-Wide and either can provide comprehensive Project Management capabilities.   
 
 **Open Project**  - see above 
+
+---
 
 #### **Social Media Systems**
 
@@ -222,6 +237,8 @@ ___
 **MediaWiki** - Mediawiki is the core of Wikipedia.  A wiki enables communities of editors and contributors to write documents collaboratively.
 
 **Ghost** - blogging platform  
+
+---
 
 #### **Miscellaneous**
 
@@ -240,7 +257,7 @@ ___
 
 **Mantis** - Mantis Defect/Problem Tracker is a free and open source, web-based tracking system.  
 
-___
+---
 
 ## How to install CIAB Web Applications  
 
