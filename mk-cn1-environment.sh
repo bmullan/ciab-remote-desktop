@@ -116,9 +116,9 @@ sudo update-alternatives --set x-session-manager /usr/bin/mate-session
 
 #-----------------------------------------------------------------------------------------------------------
 #        For the Budgie Desktop Session to launch correctly with an XRDP conection you will also be required
-#        to make a small edit of the /etc/xrdp/sysman.ini file.  
+#        to make a small edit of the /etc/xrdp/sesman.ini file.  
 #
-#        Comment out the last 2 lines of /etc/xrdp/sysman.ini and add the budgie-desktop line as follows:
+#        Comment out the last 2 lines of /etc/xrdp/sesman.ini and add the budgie-desktop line as follows:
 #
 #        # test -x /etc/X11/Xsession && exec /etc/X11/Xsession
 #        # exec /bin/sh /etc/X11/Xsession
