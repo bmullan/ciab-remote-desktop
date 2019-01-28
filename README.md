@@ -31,7 +31,7 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 2 - The CIAB Remote Desktop system files contained in this GitHub repository which include all of the installation scripts.  
 3 - sudo privileges on that server  
 
-**NOTE**:  With CIAB Remote Desktop System v2.x we introduce several major enhancements!
+**NOTE**:  With CIAB Remote Desktop System v2.x we introduced several major enhancements!
 
 CIAB has been updated with Guacamole v1.0.0 which was released January 2019.   This version of Guacamole now supports many new capabilities such as:
 
