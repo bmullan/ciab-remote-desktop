@@ -1,5 +1,4 @@
-![ciab-logo](https://user-images.githubusercontent.com/1682855/51850975-ea4e3480-22f0-11e9-9128-d945e1e2a9ab.png?classes=float-left)
-### is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
+![ciab-logo](https://user-images.githubusercontent.com/1682855/51850975-ea4e3480-22f0-11e9-9128-d945e1e2a9ab.png?classes=float-left)- is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
   
 Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
 
