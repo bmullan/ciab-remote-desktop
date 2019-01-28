@@ -10,7 +10,8 @@ Entry of a Login ID and Password is now only required one time for both CIAB's G
 If a CIAB User only has a single Remote Desktop connection configured for them they will be connected to that Desktop immediately after entering their User ID and Password.
      
 > **IMPORTANT NOTE**    
-> Read the **CIAB - README.pdf** *it has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation process!  
+> Read the **CIAB - README.pdf !**  
+>*The PDF has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation process!  
 
 
 ## CIAB Remote Desktop System v2.0 
