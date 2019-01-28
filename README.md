@@ -1,7 +1,7 @@
 ![hand](https://user-images.githubusercontent.com/1682855/48496677-8db69f80-e800-11e8-9fda-44b6fa830c04.png)
 
 # CIAB version 2.1 desktop System - v2.1
-## v 2.1 introduces the following improvements and new features:
+### v 2.1 introduces the following improvements and new features:
 
 Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
 
