@@ -7,7 +7,9 @@
 ---
 ## The CIAB Remote Desktop System 
 
-**CIAB Remote Desktop System current v2.1 Release Notes** This update introduces the following improvements and new features:
+**CIAB Remote Desktop System current v2.1 Release Notes**  
+
+This update introduces the following improvements and new features.  
 
 Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
 
