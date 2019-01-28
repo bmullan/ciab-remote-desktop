@@ -4,8 +4,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
 
-## CIAB Remote Desktop System - v2.1
-### v 2.1 introduces the following improvements and new features:
+## CIAB Remote Desktop System
+
+**CIAB Remote Desktop System current version - v2.1** introduces the following improvements and new features:
 
 Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
 
@@ -21,16 +22,15 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 >
 > Some of the new capabilities (such as file download and only requiring Login ID and Password once) will *require* some _minor_ editing of existing CIAB Guacamole **CIAB-GUAC** and **CN1** "connection" configurations for the new capabilities to work correctly!
 
-## CIAB Remote Desktop System v2.0 
-
-**CIAB Remote Desktop System current version - v2.x** 
-
 *Pre-reqs:*  
 1 - Fresh Ubuntu 18.04 server (cloud or local) or VM  
 2 - The CIAB Remote Desktop system files contained in this GitHub repository which include all of the installation scripts.  
 3 - sudo privileges on that server  
 
-**NOTE**:  With CIAB Remote Desktop System v2.x we introduced several major enhancements!
+
+## CIAB Remote Desktop System v2.0 
+
+**NOTE**:  With CIAB Remote Desktop System v2.0 we introduced several major enhancements!
 
 CIAB has been updated with Guacamole v1.0.0 which was released January 2019.   This version of Guacamole now supports many new capabilities such as:
 
