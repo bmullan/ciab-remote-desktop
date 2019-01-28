@@ -1,6 +1,18 @@
 ![hand](https://user-images.githubusercontent.com/1682855/48496677-8db69f80-e800-11e8-9fda-44b6fa830c04.png)
 
-# CIAB Remote Desktop System v2.0 
+# CIAB version 2.1 introduces the following improvements.
+
+Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
+
+Entry of a Login ID and Password is now only required one time for both CIAB's Guacamole and the CIAB Remote Desktop connections. 
+
+If a CIAB User only has a single Remote Desktop connection configured for them they will be connected to that Desktop immediately after entering their User ID and Password.
+     
+> **IMPORTANT NOTE**    
+> Read the **CIAB - README.pdf** *it has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation process!  
+
+
+## CIAB Remote Desktop System v2.0 
 
 *The CIAB Remote Desktop System is a clientless remote desktop.  It's called clientless because no plugins or client software are required!*
 
