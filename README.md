@@ -2,7 +2,7 @@
   
 Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
 
-# CIAB version 2.1 desktop System - v2.1
+# CIAB Remote Desktop System - v2.1
 ### v 2.1 introduces the following improvements and new features:
 
 Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
