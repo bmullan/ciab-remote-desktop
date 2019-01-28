@@ -7,7 +7,7 @@ Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM
 
 Both file uploads and downloads now work between a Users local PC and their CIAB Remote Desktop system.
 
-Entry of a Login ID and Password is now only required one time for both CIAB's Guacamole and the CIAB Remote Desktop connections. 
+Entry of a Login ID and Password is now only required one time for both CIAB's Guacamole and the CIAB Remote Desktop connections.  
 
 If a CIAB User only has a single Remote Desktop connection configured for them they will be connected to that Desktop immediately after entering their User ID and Password.
      
