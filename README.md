@@ -5,7 +5,7 @@ The CIAB Remote Desktop System is a clientless remote desktop.
 _It's called **clientless** because no plugins or client software are required!_  
   
 _Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud instance, all you need to access your desktop(s) is an HTML5 capable web browser!_  
-![hand](https://user-images.githubusercontent.com/1682855/48496677-8db69f80-e800-11e8-9fda-44b6fa830c04.png)  
+![hand](https://user-images.githubusercontent.com/1682855/48496677-8db69f80-e800-11e8-9fda-44b6fa830c04.png =250x250)  
 # CIAB version 2.1 desktop System - v2.1
 ### v 2.1 introduces the following improvements and new features:
 
@@ -22,7 +22,6 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 >*The PDF has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation process!  
 >
 > Some of the new capabilities (such as file download and only requiring Login ID and Password once) will *require* some _minor_ editing of existing CIAB Guacamole **CIAB-GUAC** and **CN1** "connection" configurations for the new capabilities to work correctly!
-
 
 ## CIAB Remote Desktop System v2.0 
 
