@@ -21,7 +21,7 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 >  
 > Please review the **CIAB - README.pdf !**  
 >  
->*The PDF has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation process!  
+>*The PDF has been _significantly_ updated/improved* in regards to not only the new features but also the overall CIAB Installation & Configuration process!  
 >
 > Some of the new capabilities (such as file download and only requiring Login ID and Password once) will *require* some _minor_ editing of existing CIAB Guacamole **CIAB-GUAC** and **CN1** "connection" configurations for the new capabilities to work correctly!
 
