@@ -294,6 +294,10 @@ To install one or more of the CIAB Web Applications the Admin needs to click on 
 
 Currently, all applications are installed using Bitnami .RUN files (https:\/\/bitnami.com\/) *except for* iTop, NextCloud and NuBuilder which are not Bitnami applications and thus require their own installation scripts.   
 
+After completion of the installation of any CIAB Web Applications there may be important information displayed regarding login/access information (specific default admin login IDs or passwords, specific Port numbers that must be used/open etc).
+
+So the CIAB Admin should, upon completion of the installation, record any important information like this and if necessary perform any additional configuration requirements such as opening a Port in that Application's LXD container Firewall etc.
+
 *Additional CIAB applications will be added in the future.*
 
 Each selected application will be installed into its own LXD container _**nested**_ in the **ciab-guac** container.
@@ -318,7 +322,11 @@ When you are logged into a *CIAB Ubuntu-Mate desktop*, start a web browser on th
 
 Lets say the WordPress application was installed in an LXD container with IP address 10.16.124.50.
 
-You would point the CIAB Remote Desktop browser to *"http:\/\/10.16.124.50\/wordpress"*
+You want to login as admin and add/edit content on the Wordpress blog.  
+You would point the CIAB Remote Desktop browser to *"http:\/\/10.16.124.50\/wp-admin"*
+
+If a CIAB User just wanted to read the WordPress Blog they would point the CIAB Remote Desktop browser  
+to *"http:\/\/10.16.124.50\/"*  
 
 **TIP/Hint**:  
 As an Admin you could make life easier for the users by modifying the CIAB Remote Desktop container  (re cn1, cn2 etc) **/etc/hosts** file and adding entries for each CIAB Application you installed.
