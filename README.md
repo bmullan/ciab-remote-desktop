@@ -30,6 +30,7 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 2 - The CIAB Remote Desktop system files contained in this GitHub repository which include all of the installation scripts.  
 3 - sudo privileges on that server  
 
+Also, note that I have started adding some short _**Tips**_ into this Repositories **Issues** section to help with several topics.
 
 ## CIAB Remote Desktop System v2.0 release notes
 
