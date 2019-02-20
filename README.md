@@ -32,7 +32,7 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 
 Also, note that I have started adding some short _**Tips**_ into this Repository's **Issues** section to help with several topics.
 
-## CIAB Remote Desktop System v2.0 release notes
+**CIAB Remote Desktop System v2.0 release notes**
 
 **NOTE**:  With CIAB Remote Desktop System v2.0 we introduced several major enhancements!
 
