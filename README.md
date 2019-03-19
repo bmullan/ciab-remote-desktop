@@ -7,6 +7,19 @@
 ---
 ## The CIAB Remote Desktop System 
 
+**CIAB Remote Desktop System current v2.2 Release Notes** 
+
+CIAB has had a redesign of how the CIAB Web App Containers are created.   
+
+Previously, in v2.1 they were created as "nested" LXD containers inside the ciab-guac container.
+
+Due to a couple bugs in Apparmor that are related to "nested" Apparmor profiles which may take quite a while to be resolved I have redesigned how the CIAB Web Apps are deployed.   They are now created as normal LXD (ie non-nested) containers at the same container level as the ciab-guac and CN1.
+
+> Note:  the Web App containers and their applications are still isolated to the private 10.x.x.x network and still  accessible by Remote Desktop users of the CN1 environment.    Those Web App containers also still retain access to the Internet but are isolated from direct access "from" the Internet.
+
+---
+## The CIAB Remote Desktop System 
+
 **CIAB Remote Desktop System current v2.1 Release Notes**  
 
 This update introduces the following improvements and new features.  
