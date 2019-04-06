@@ -165,6 +165,8 @@ pushd  .
 
 sudo apt install xorgxrdp xrdp-pulseaudio-installer -y
 
+sudo add-apt-repository ppa:martinx/xrdp-next -y
+
 sudo apt update
 sudo apt install xrdp xorgxrdp -y
 
