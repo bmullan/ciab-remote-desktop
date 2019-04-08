@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #========================================================================================================================
-# mk-cn1-environment.sh 
+# mk-cn1-environment.sh
 #
 # by brian mullan (bmullan.mail@gmail.com)
 #
