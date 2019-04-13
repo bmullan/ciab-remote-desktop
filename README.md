@@ -16,6 +16,25 @@ Previously, in v2.1 they were created as "nested" LXD containers inside the ciab
 Due to a couple bugs in Apparmor that are related to "nested" Apparmor profiles which may take quite a while to be resolved I have redesigned how the CIAB Web Apps are deployed.   They are now created as normal LXD (ie non-nested) containers at the same container level as the ciab-guac and CN1 containers.
 
 > Note:  the Web App containers and their applications are still isolated to the private 10.x.x.x network and still  accessible by Remote Desktop users of the CN1 environment.    Those Web App containers also still retain access to the Internet but are isolated from direct access "from" the Internet.
+CIAB version 2.2 introduces the following improvements.
+
+Any CIAB Web-Apps installed by the CIAB Admin from the Menu available on their CIAB-GUAC container Mate Desktop now get installed in LXD Containers as “peer containers” on the 10.x.x.x private network that CIAB-GUAC and CN1 containers are on. 
+
+This is a change from CIAB’s previous use of “nested” containers for the CIAB Web-Apps and was driven by a bug in upstream
+Apparmor concerning “nested” Apparmor profiles. That bug may be a while before it is fixed so a decision was made to make this change.
+
+Now *as Admin*, from the Host/Server you can find/see all installed applications and the CIAB-GUAC
+and CN1 containers and their IP addresses by executing:
+
+> $ lxc list
+
+Also, in CIAB v2.2, **TOTP (Timed One Time Password) 2 Factor Authentication (2FA)** is now an optional capability which the *CIAB Admin* can easily install and it will automatically activate for use by CIAB users logging in afterwards.
+
+> **NOTE**: users will have to have a TOTP compatible application on their smart phones inorder to use TOTP. Google Authenticator works well for this and is available on Android and iPhone.
+
+This Installation Guide now has an *added section describing the 4 steps required to* create an **IPP (Internet Printing Protocol)** Printer in the CN1 *CUPS (Common Unix Printing System)* so users can print directly to their local printers (if those printers support IPP).
+
+Lastly, the CIAB-README.PDF document now also contains a section titled “**Steps to Implement a real/valid HTTPS/TLS Certificate for CIAB**”. This section provides information and a Guide for how to obtain & install a valid Certificate from a Certificate Authority (LetsEncrypt) for use for HTTPS/TLS access to your CIAB installation.
 
 ---
 ## The CIAB Remote Desktop System 
