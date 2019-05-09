@@ -154,25 +154,13 @@ sudo ufw allow 4822        # guacd
 sudo ufw allow 5353        # avahi
 
 #============================================================================================================
-# For xrdp we need to use sommething newer than the v0.9.5 that's in the Ubuntu repositories due to a problem
-# with Drevice Redirection (including Drive Redirection - which affects Guacamole's file Download ability.
-#
-# So we are going to use Thiago Martins ppa and install xrdp v0.9.5-2 which is actually the latest from
-# NeutrinoLabs as this bug is fixed in that release !!
+# Install xrdp v0.9.5-2
 # 
 
 pushd  .
 
-sudo apt install xorgxrdp xrdp-pulseaudio-installer -y
+sudo apt install xrdp xorgxrdp xrdp-pulseaudio-installer -y
 
-sudo add-apt-repository ppa:martinx/xrdp-hwe-18.04 -y
-sudo apt update
-sudo apt install xrdp xorgxrdp -y
-
-# and because 1 package doesn't get installed when installing xorgxrdp due to a dependency we will
-# install that "dependency" here
-
-sudo apt install xorg-video-abi-24 -y
 
 #=======================================================================================================
 # in /etc/sesman.ini comment out with a semi-colon ';' the line...
