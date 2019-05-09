@@ -157,7 +157,7 @@ sudo ufw allow 5353        # avahi
 # For xrdp we need to use sommething newer than the v0.9.5 that's in the Ubuntu repositories due to a problem
 # with Drevice Redirection (including Drive Redirection - which affects Guacamole's file Download ability.
 #
-# So we are going to use Thiago Martins ppa and install xrdp v0.9.9 which is actually the latest from
+# So we are going to use Thiago Martins ppa and install xrdp v0.9.5-2 which is actually the latest from
 # NeutrinoLabs as this bug is fixed in that release !!
 # 
 
