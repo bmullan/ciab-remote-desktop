@@ -476,12 +476,12 @@ read -p "Press any key to finish..."
 # proxy port 443 on host to ciab-guac so a web browser trying to connect via port 443 (ie https/tls)
 # can connect to the guacamole web server running in ciab-guac container
 
-lxc config device add ciab-guac proxyport443 proxy listen=tcp:0.0.0.0:443 connect=tcp:localhost:443
+lxc config device add ciab-guac proxyport443 proxy listen=tcp:0.0.0.0:443 connect=tcp:127.0.0.1:443
 
 # and for possible use by letsencrypt to supply a valid HTTPS/TLS certificate letsencrypt needs 
 # port 80 open in ciab-guac container so we PROXY DEVICE port 80 on host to ciab-guac
 
-lxc config device add ciab-guac proxyport80 proxy listen=tcp:0.0.0.0:80 connect=tcp:localhost:80
+lxc config device add ciab-guac proxyport80 proxy listen=tcp:0.0.0.0:80 connect=tcp:127.0.0.1:80
 
 #=================================================================================================
 # push our CIAB Guacamole Branding files to the appropriate directories in the ciab-guac container
