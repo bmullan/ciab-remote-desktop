@@ -189,10 +189,6 @@ container's Web Browser can access and log into these web applications.
 
 _**Another big benefit involves Backups**_.  
 
-Because all of the CIAB Web Applications are installed in *nested* LXD containers inside of the **ciab-guac** container, if you backup or copy the **ciab-guac** container you will automatically be backing up/copying all of your installed applications too!  
-
-Also, the same for restores if it is ever required!
-
 *Keep in mind if you have installed a lot of the CIAB Web Applications and users have input a lot of data into them, the backup may take a while to complete and you need to insure that the backup remote LXD server has appropriate free disk space.*
 
 **Reference**:  https://lxd.readthedocs.io/en/latest/backup/  
