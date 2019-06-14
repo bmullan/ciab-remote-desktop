@@ -8,7 +8,7 @@
 
 ---
 
-**Complete [CIAB Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).
+**Complete [CIAB Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).**
 
 ---
 ## Release Notes 
