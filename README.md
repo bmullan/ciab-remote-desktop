@@ -7,6 +7,10 @@
 **PLEASE REVIEW the ISSUES Section for IMPORTANT CIAB bug fix info and Use TIPS...!**
 
 ---
+
+**Complete [CIAB Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).
+
+---
 ## Release Notes 
 
 **v2.2 Release Notes** 
