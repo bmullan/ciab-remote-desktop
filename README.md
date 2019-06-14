@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
 
-**PLEASE REVIEW the ISSUES Section for IMPORTANT CIAB bug fix info and Use TIPS...!**
+**PLEASE REVIEW this GitHub Repository _Issues_ Section for IMPORTANT CIAB bug fix info and Use TIPS...!**
 
 ---
 
