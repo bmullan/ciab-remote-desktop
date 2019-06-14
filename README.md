@@ -7,9 +7,9 @@
 **PLEASE REVIEW the ISSUES Section for IMPORTANT CIAB bug fix info and Use TIPS...!**
 
 ---
-## The CIAB Remote Desktop System 
+## Release Notes 
 
-**CIAB Remote Desktop System current v2.2 Release Notes** 
+**v2.2 Release Notes** 
 
 CIAB has had a redesign of how the CIAB Web App Containers are created.   
 
@@ -39,9 +39,7 @@ This Installation Guide now has an *added section describing the 4 steps require
 Lastly, the CIAB-README.PDF document now also contains a section titled “**Steps to Implement a real/valid HTTPS/TLS Certificate for CIAB**”. This section provides information and a Guide for how to obtain & install a valid Certificate from a Certificate Authority (LetsEncrypt) for use for HTTPS/TLS access to your CIAB installation.
 
 ---
-## The CIAB Remote Desktop System 
-
-**CIAB Remote Desktop System current v2.1 Release Notes**  
+**v2.1 Release Notes**  
 
 This update introduces the following improvements and new features.  
 
@@ -66,7 +64,8 @@ If a CIAB User only has a single Remote Desktop connection configured for them t
 
 Also, note that I have started adding some short _**Tips**_ into this Repository's **Issues** section to help with several topics.
 
-**CIAB Remote Desktop System v2.0 release notes**
+---
+**v2.0 release notes**
 
 **NOTE**:  With CIAB Remote Desktop System v2.0 we introduced several major enhancements!
 
