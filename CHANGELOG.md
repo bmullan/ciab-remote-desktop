@@ -1,8 +1,6 @@
 ##Release Notes
 
-\==================
-v2.2 Release Notes
-\==================
+###v2.2 Release Notes
 
 CIAB has had a redesign of how the CIAB Web App Containers are created.
 
@@ -52,9 +50,7 @@ This section provides information and a Guide for how to obtain & install a vali
 from a Certificate Authority (LetsEncrypt) for use for HTTPS/TLS access to your CIAB installation.
 
 
-\==================
-v2.1 Release Notes
-\==================
+###v2.1 Release Notes
 
 This update introduces the following improvements and new features.
 
@@ -82,9 +78,7 @@ with several topics.
 
 
 
-\==================
-v2.0 release notes
-\==================
+###v2.0 release notes
 
 With CIAB Remote Desktop System v2.0 introduced several major enhancements!
 
