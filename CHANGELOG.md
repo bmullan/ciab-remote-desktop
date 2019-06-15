@@ -1,4 +1,4 @@
-Release Notes
+##Release Notes
 
 \==================
 v2.2 Release Notes
@@ -66,7 +66,7 @@ Remote Desktop connections.
 If a CIAB User only has a single Remote Desktop connection configured for them they will be connected 
 to that Desktop immediately after entering their User ID and Password.
 
-IMPORTANT NOTE
+**IMPORTANT NOTE**
 
     Please review the CIAB - README.pdf !
 
@@ -86,7 +86,7 @@ with several topics.
 v2.0 release notes
 \==================
 
-NOTE: With CIAB Remote Desktop System v2.0 we introduced several major enhancements!
+With CIAB Remote Desktop System v2.0 introduced several major enhancements!
 
 CIAB has been updated with Guacamole v1.0.0 which was released January 2019. This version of Guacamole 
 now supports many new capabilities such as:
@@ -106,8 +106,9 @@ now supports many new capabilities such as:
     Automatic connection behavior which means Guacamole will automatically connect upon login for users 
     that have access to only a single connection, skipping the home screen.
 
-A recent addition to the CIAB Remote Desktop are the CIAB Web Applications! Previously, this had to be installed 
-separately after the CIAB Remote Desktop system had been installed.
+A recent addition to the CIAB Remote Desktop are the *CIAB Web Applications*! 
+
+Previously, this had to be installed separately after the CIAB Remote Desktop system had been installed.
 
 With CIAB Remote Desktop System v2.0 this has now been integrated so that the CIAB Admin will see an Icon on their 
 Mate Desktop when they log into the CIAB-GUAC LXD container desktop.
@@ -116,7 +117,7 @@ To install one or more of those CIAB Web Apps you just have to click on that Ico
 "RUN IN A TERMINAL" and after doing so you will be presented with a GUI Menu where you can Check the boxes 
 for one or more Web Applications you'd like to install.
 
-NOTE: These applications will be installed as peer LXD containers to the CIAB-GUAC and CN1 containers and they 
+**NOTE**: These applications will be installed as peer LXD containers to the CIAB-GUAC and CN1 containers and they 
 will all be attached to the same 10.x.x.x private network that the CIAB-GUAC and the CN1 containers are attached to. 
 
 This use of the private 10.x.x.x network has greatly enhanced the security regarding using these Web Applications 
@@ -127,7 +128,7 @@ Read more about the CIAB Web Application later in the Section of this README tit
 
 These are a large group of Web based applications. Each selected application is installed in its own LXD container.
 
-Important Note:
+**Important Note**:
 
 In this repository is a file called CIAB System Architecture Mindmap.pdf. 
 
@@ -144,7 +145,7 @@ The end-user Desktops all run in a second LXD Container called CN1.
 
 Installation time depends the chosen Server/Host's number/type of CPU, amount of RAM and type of disk (SSD or spinning).
 
-NOTE: For example, on a Server with 4 core 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.
+**NOTE**: For example, on a Server with 4 core 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.
 
 After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or 
 on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
@@ -157,8 +158,8 @@ installation any CIAB Desktop user that points their Browser to the Host/Server 
 LXD container.
 
 Since ciab-guac resides on the same private/internal 10.x.x.x subnet as the cn1 container and any additional containers
- you clone from the original cn1, they can all inter-communicate with one another. 
+you clone from the original cn1, they can all inter-communicate with one another. 
 
 Also, any CIAB Web Applications the Admin installs will also be attached to this same 10.x.x.x network allowing 
-only validated CIAB Users logged into the Mate Desktop on CN1 to use their browser to access those applications.
+**only** validated CIAB Users logged into the Mate Desktop on CN1 to use their browser to access those applications.
 
