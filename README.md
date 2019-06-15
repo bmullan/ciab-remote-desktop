@@ -166,7 +166,7 @@ _If you download the Installation script source files and the CIAB-README.pdf do
 
 > NOTE:  *In mk-cn1-environment.sh there are commented-out sections that show what you need to do if you'd prefer a Desktop Environment (DE) other than Ubuntu-Mate.   Included are xubuntu (xfce4) and budgie DE.*
 
-**Please refer to the CIAB-README.pdf file for more complete documentation on installation and use.**
+**The latest [CIAB Installation and Configuration Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).**
 
 ---
 
