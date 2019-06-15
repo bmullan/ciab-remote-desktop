@@ -10,7 +10,7 @@
 
 **Complete [CIAB Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).**
 
-## What is CIAB Remote Desktop System?
+## What is the CIAB Remote Desktop System?
 
 CIAB Remote Desktop (CIAB – Cloud-In-A-Box) was originally envisioned around 2008 after I had the opportunity from my then employer Cisco Systems to spend nearly 18 months on a Fellowship with a non-profit here in North Carolina that provides the networking connectivity (NCREN) to all of the schools in North Carolina.
 
