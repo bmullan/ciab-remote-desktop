@@ -112,7 +112,8 @@ To install one or more of those CIAB Web Apps you just have to click on that Ico
 "RUN IN A TERMINAL" and after doing so you will be presented with a GUI Menu where you can Check the boxes 
 for one or more Web Applications you'd like to install.
 
-**NOTE**: These applications will be installed as peer LXD containers to the CIAB-GUAC and CN1 containers and they 
+**NOTE**:   
+> These applications will be installed as peer LXD containers to the CIAB-GUAC and CN1 containers and they 
 will all be attached to the same 10.x.x.x private network that the CIAB-GUAC and the CN1 containers are attached to. 
 
 This use of the private 10.x.x.x network has greatly enhanced the security regarding using these Web Applications 
@@ -140,7 +141,8 @@ The end-user Desktops all run in a second LXD Container called CN1.
 
 Installation time depends the chosen Server/Host's number/type of CPU, amount of RAM and type of disk (SSD or spinning).
 
-**NOTE**: For example, on a Server with 4 core 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.
+**NOTE**:  
+> For example, on a Server with 4 core 8GB ram and an SSD disk drive the installation will take between 30-45 minutes.
 
 After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or 
 on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
