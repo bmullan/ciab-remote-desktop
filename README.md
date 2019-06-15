@@ -1,13 +1,15 @@
 ![ciab-logo](https://user-images.githubusercontent.com/1682855/51850975-ea4e3480-22f0-11e9-9128-d945e1e2a9ab.png?classes=float-left)  
 
-**CIAB** ("*Cloud-In-A-Box*") Remote Desktop is a server application that integrates and extends the [Apache Guacamole](https://guacamole.apache.org/) clientless remote desktop gateway on a Ubuntu 18.04 LTS host with LXD containers. They CIAB Administrator also can easily deploy a number of web applications using a GUI tool provided on the Admin's Desktop.
+**CIAB** ("*Cloud-In-A-Box*") Remote Desktop is a server application that integrates and extends the [Apache Guacamole](https://guacamole.apache.org/) clientless remote desktop gateway on a Ubuntu 18.04 LTS host with LXD containers. 
+
+The CIAB Administrator can also easily deploy a number of web applications (see below) using a GUI tool provided on the Admin's Desktop.
 
 Using only a web browser that supports HTML5, users can connect to this web interface and access web applications and the Ubuntu Mate desktop as pre-configured and authorized by the CIAB administrator.
 
 The initial installation configures two LXD containers:
 
-- \* CIAB-GUAC: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
-- \* CN1 : A nested LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
+- \* **CIAB-GUAC**: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
+- \* **CN1** : An LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
 
 CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
     
