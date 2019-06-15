@@ -8,8 +8,8 @@ Using only a web browser that supports HTML5, users can connect to this web inte
 
 The initial installation configures two LXD containers:
 
-- \* **CIAB-GUAC**: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
-- \* **CN1** : An LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
+- **CIAB-GUAC**: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
+- **CN1** : An LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
 
 CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
     
