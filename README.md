@@ -1,8 +1,17 @@
 ![ciab-logo](https://user-images.githubusercontent.com/1682855/51850975-ea4e3480-22f0-11e9-9128-d945e1e2a9ab.png?classes=float-left)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
+
+**CIAB** ("*Cloud-In-A-Box*") Remote Desktop is a server application that integrates and extends the [Apache Guacamole](https://guacamole.apache.org/) clientless remote desktop gateway on a Ubuntu 18.04 LTS host with LXD containers. They CIAB Administrator also can easily deploy a number of web applications using a GUI tool provided on the Admin's Desktop.
+
+Using only a web browser that supports HTML5, users can connect to this web interface and access web applications and the Ubuntu Mate desktop as pre-configured and authorized by the CIAB administrator.
+
+The initial installation configures two LXD containers:
+
+- \* CIAB-GUAC: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
+- \* CN1 : A nested LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
+
+CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
+Thanks to HTML5, once the CIAB Remote Desktop System is installed on a Server/VM/Cloud instance, all you need to access your desktop(s) is an HTML5 capable web browser!  
 
 **PLEASE REVIEW** this GitHub Repository _**[Issues](https://github.com/bmullan/ciab-remote-desktop/issues)**_ Section for **IMPORTANT** CIAB bug fix info and Use TIPS...!**
 
