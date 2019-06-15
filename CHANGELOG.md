@@ -37,8 +37,8 @@ capability which the CIAB Admin can easily install and it will automatically act
 users logging in afterwards.
 
 **NOTE**:   
-    Users will have to have a TOTP compatible application on their smart phones inorder to use TOTP. 
-    Google Authenticator works well for this and is available on Android and iPhone.
+> Users will have to have a TOTP compatible application on their smart phones inorder to use TOTP. 
+> Google Authenticator works well for this and is available on Android and iPhone.
 
 This Installation Guide now has an added section describing the 4 steps required to create an 
 IPP (Internet Printing Protocol) Printer in the CN1 CUPS (Common Unix Printing System) so users can 
