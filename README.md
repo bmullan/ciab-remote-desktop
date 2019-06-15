@@ -57,9 +57,13 @@ After installation you can very easily add more remote desktop server containers
 
 > $ lxc copy cn1 cn2 
 
-This 2.0 version also utilizes the recently added new Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container.
+This 2.0 version also utilizes the recently added new Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container first where Guacamole will then process that User for further connections (ie to CN1) according to the Configurations made by the CIAB Admin.  
 
-Since ciab-guac resides on the same private/internal 10.x.x.x subnet as the cn1 container and any additional containers you clone from the original cn1, they can all inter-communicate with one another.   Also, any CIAB Web Applications the Admin installs will also be attached to this same 10.x.x.x network allowing validated CIAB Users logged into the Mate Desktop on CN1 to use their browser to access those applications.
+If the CIAB Admin has configured that User for access to the CN1 Desktop Container or possibly other CNx containers that may have been configured on the CIAB "Host/Server" then the User will be presented with a menu to select which "connection" they want to log into.
+
+Since the **ciab-guac** container resides on the same private/internal 10.x.x.x subnet as the **cn1** container and any additional containers you clone from the original cn1, they can all inter-communicate with one another.   
+
+Also, any CIAB Web Applications the Admin installs will also be attached to this same 10.x.x.x network allowing validated CIAB Users logged into the Mate Desktop on CN1 to use their CN1 Mate Desktop's browser to access those Web applications.
 
 Depending on the Host Server's number of CPU core, Memory capacity and storage you could potentially have dozens or hundreds of cnX containers, each with its own Ubuntu-Mate Desktop.   This means that remote users can also be configured to potentially access and use any of those dozens of cnX Ubuntu-Mate Desktops by the Guacamole admin.
 
