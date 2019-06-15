@@ -20,7 +20,7 @@ At the time, cloud computing was just beginning and Amazon's AWS was practically
     • local inexperienced technical support which often-times consisted of a librarian, teacher or volunteers 
     • a hodge-podge of mixed old/new computers (desktop, laptops)   
 
-Today the available computers now also include mixes of chromebooks, tablets as well.   Security & viruses on the student machines was a constant problem.
+Today the available computers now also include mixes of chromebooks, tablets as well.   Security & viruses on the student machines were a constant problem.
 
 The above circumstances and combination of problems often created a frustrating experience for teachers, students and parents.   So in 2008 I first starting thinking about how to bring together a Cloud based Remote Desktop solution that while not solving every problem, would try to adhere to the 80/20 rule of trying to solve 80% of the problems.
 
@@ -30,6 +30,10 @@ on your local PC/Laptop/Chromebook!
 The amount of memory, disk drive space, operating system on the local computers *no longer matters* as the real User “desktops” are remote and the “server” they run on can be scaled in the “cloud” to as large as needed in size or number based on availability.  
 
 The school would only need decent Network connectivity in regards to speed & reliability.
+
+However, as time and my efforts on CIAB continued I evolved its design beyond schools for use-cases in business, non-profits etc.
+
+CIAB today implements its managment tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
 
 ---
 ## Release Notes 
