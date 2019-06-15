@@ -29,7 +29,7 @@ At the time, cloud computing was just beginning and Amazon's AWS was practically
     • local inexperienced technical support which often-times consisted of a librarian, teacher or volunteers 
     • a hodge-podge of mixed old/new computers (desktop, laptops)   
 
-Today the available computers now also include mixes of chromebooks, tablets as well.   Security & viruses on the student machines were a constant problem.
+Today the available computers now also include mixes of chromebooks, tablets as well.   Security & viruses on the student machines are still constant problem.
 
 The above circumstances and combination of problems often created a frustrating experience for teachers, students and parents.   So in 2008 I first starting thinking about how to bring together a Cloud based Remote Desktop solution that while not solving every problem, would try to adhere to the 80/20 rule of trying to solve 80% of the problems.
 
