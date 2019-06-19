@@ -42,7 +42,7 @@ The school would only need decent Network connectivity in regards to speed & rel
 
 However, as time and my efforts on CIAB continued I evolved its design beyond schools for use-cases in business, non-profits etc.
 
-CIAB today implements its managment tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
+CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
 
 There are 2 YouTube video's regarding CIAB (note these are a bit out of date but still useful overall):
 
@@ -117,9 +117,9 @@ If access to these Web Applications is desired there is a relatively easy config
 To enable Internet access to any installed CIAB Web Applications the administrator has to issue two commands for each installed application.   Both commands are related in that they will setup a *"chain" of Port Forwarding*.    First from the internet into the ciab-guac container and then for that port into the LXD container of the target CIAB Web Application.
 
 Example for the Drupal CMS application lets say we want to use Port 8000 from the internet to access it.   From the Host server we would first issue the following:  
-> lxc config device add **ciab-guac** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:localhost:**8000**  
+> lxc config device add **ciab-guac** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:127.0.0.1:**8000**  
 then *from inside the ciab-guac* container...   
-> lxc config device add **drupal** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:localhost:**8000**  
+> lxc config device add **drupal** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:127.0.0.1:**8000**  
 
 NOTE:  the label "proxyport" is arbitrary and is just an identifier.   Port 8000 is also somewhat arbitrary in that you can choose any port that is **not a "well-known port"** an [IANA reserved port (ie 0 - 1023)](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml). 
 
