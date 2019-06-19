@@ -273,15 +273,13 @@ So the CIAB Admin should, upon completion of the installation, record any import
 
 Each selected application will be installed into its own LXD container.
 
-> **NOTE**: NextCloud is an exception to this.  Due to a bug with AppArmor and "nested" AppArmor profiles we cannot install the SNAP version of NextCloud in a "nested" container as with the other applications.   So NextCloud is installed in an LXD container called "nextcloud" in the Host/Server and is attached to the same private 10.x.x.x network as all the other containers.   If you (ie CIAB Admin) need to delete/copy/start etc the NextCloud container you will have to ssh into the Host and execute the appropirate LXC commands there (re - lxc list nextcloud, lxc stop nextcloud etc)
-
-Each of those Web Application Containers will be attached to the same lxdbr0 bridge via the ETH0 interface of the **ciab-guac** container and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
+Each of those Web Application Containers will be attached to the same lxdbr0 bridge via their container's ETH0 interface and thus those Web Application containers will be allocated a 10.x.x.x IP address on the same subnet as **ciab-guac** and the initial **cn1** Ubuntu-Mate desktop container.  
 
 After applications have been installed you can:  
 
 1. get a full list of installed applications & their LXD container IP addresses by opening a terminal when logged into the **ciab-guac** container and executing:
 
-> $ **lxc list**
+> $ **lxc list ciab-host:**
 
 Next, you should log into the *CIAB Remote Desktop* using your local web browser to access Guacamole which is running in the **cn1** LXD container.
 
