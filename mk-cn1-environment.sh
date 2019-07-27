@@ -159,17 +159,23 @@ sudo ufw allow 5353        # avahi
 
 pushd  .
 
+sudo add-apt-repository ppa:martinx/xrdp-next -y
+
+sudo apt-get update
+
 sudo apt install xrdp xorgxrdp xrdp-pulseaudio-installer -y
 
-
 #=======================================================================================================
-# in /etc/sesman.ini comment out with a semi-colon ';' the line...
-#     FuseMountName=.thinclient_drives
+# in /etc/sesman.ini change the default fusemount name 
+# from
+#     FuseMountName=thinclient_drives
+# to
+#     FuseMountName=ciab_drive
 #
 # This will force xrdp to create the FUSE Desktop folder used for uploads/downloads from
-# the client to the remote desktop to become named 'xrdp_client' instead of thinclient_drives
+# the client to the remote desktop to become named 'ciab_drive' instead of thinclient_drives
 
-sudo sed -i 's/FuseMountName=thinclient_drives/;FuseMountName=.thinclient_drives/' /etc/xrdp/sesman.ini
+sudo sed -i 's/FuseMountName=thinclient_drives/FuseMountName=ciab_drive/' /etc/xrdp/sesman.ini
 
 #==============================================================
 # Change XRDP login screen to reflect CIAB Remote Desktop title
