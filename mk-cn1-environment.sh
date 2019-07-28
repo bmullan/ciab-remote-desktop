@@ -161,9 +161,9 @@ pushd  .
 
 sudo add-apt-repository ppa:martinx/xrdp-next -y
 
-sudo apt-get update
+sleep 5
 
-sudo apt install xrdp xorgxrdp xrdp-pulseaudio-installer -y
+sudo apt install xorg-video-abi-24 xrdp xorgxrdp xrdp-pulseaudio-installer -y
 
 #=======================================================================================================
 # in /etc/sesman.ini change the default fusemount name 
