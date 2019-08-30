@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon=/opt/ciab-apps/ciab-logo.svg
+Icon[en_US]=/opt/ciab-apps/ciab-logo.svg
+Name[en_US]=CIAB Web Applications Installer
+Exec=/opt/ciab-apps/ciab-apps-install.sh
+Name=CIAB Web Applications Installer
+
+

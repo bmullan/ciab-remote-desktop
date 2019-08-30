@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon=/opt/ciab-apps/ciab-mano.svg
+Icon[en_US]=/opt/ciab-apps/ciab-mano.svg
+Name[en_US]=CIAB Container Orchestrator
+# when icon is clicked start chromium and point it to the
+# ciab lxdmosaic container orchestrator's container ip
+Exec=/usr/bin/ciabmano.sh
+Name=CIAB Container Orchestrator
+
+
+
