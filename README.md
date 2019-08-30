@@ -12,7 +12,7 @@ Using **only** a web browser that supports HTML5, users can connect to this web 
 The initial installation configures four LXD containers:
 
 - **CIAB-ADMIN**: An LXD container meant for CIAB Adminstrator use.   This provides access to the CIAB Management and Orchestration (MANO) tool based on LXDMosaic and to the CIAB Web Applications Installation too.
-- **CIAB-MANO**: An LXD container where LXDMosaic is installed.  LXDMosaic provides a GUI Management and Orchestration (MANO) of LXD containers both on the Local LXD Host/Server and on Remote LXD Host/Servers
+- **CIAB-MANO**: An LXD container where [LXDMosaic](https://github.com/turtle0x1/LxdMosaic) is installed.  LXDMosaic provides a GUI Management and Orchestration (MANO) of LXD containers both on the Local LXD Host/Server and on Remote LXD Host/Servers
 - **CIAB-GUAC**: An LXD container where Apache Guacamole, Tomcat, NGINX, MySQL and XRDP run. 
 - **CN1** : An LXD container where CIAB End-Users connect to their CIAB Ubuntu-Mate Remote Desktop, accessible via RDP using the CIAB Guacamole front-end.
 
