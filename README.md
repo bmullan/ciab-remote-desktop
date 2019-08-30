@@ -1,15 +1,20 @@
 ![ciab-logo](https://user-images.githubusercontent.com/1682855/51850975-ea4e3480-22f0-11e9-9128-d945e1e2a9ab.png?classes=float-left)  
 
-**CIAB** ("*Cloud-In-A-Box*") Remote Desktop is a server application that integrates and extends the [Apache Guacamole](https://guacamole.apache.org/) clientless remote desktop gateway on a Ubuntu 18.04 LTS host with LXD containers. 
+**I am happy to introduce CIAB v3 !**  a major upgrade & refactoring of the CIAB Remote Desktop System.
+
+
+**CIAB** ("*Cloud-In-A-Box*") v3 Remote Desktop System is a server application that integrates and extends the [Apache Guacamole](https://guacamole.apache.org/) clientless remote desktop gateway on a Ubuntu 18.04 LTS host with LXD containers. 
 
 The CIAB Administrator can also easily deploy a number of web applications (see below) using a GUI tool provided on the Admin's Desktop.
 
 Using **only** a web browser that supports HTML5, users can connect to this web interface and access web applications and the Ubuntu Mate desktop as pre-configured and authorized by the CIAB administrator.
 
-The initial installation configures two LXD containers:
+The initial installation configures four LXD containers:
 
-- **CIAB-GUAC**: An LXD container including Apache Guacamole, Tomcat, NGINX, MySQL and XRDP to Manage and Orchestrate (MANO)  the CIAB system and Users
-- **CN1** : An LXD container in CIAB-GUAC including Ubuntu Mate, accessible via RDP using the CIAB web front-end.
+- **CIAB-ADMIN**: An LXD container meant for CIAB Adminstrator use.   This provides access to the CIAB Management and Orchestration (MANO) tool based on LXDMosaic and to the CIAB Web Applications Installation too.
+- **CIAB-MANO**: An LXD container where LXDMosaic is installed.  LXDMosaic provides a GUI Management and Orchestration (MANO) of LXD containers both on the Local LXD Host/Server and on Remote LXD Host/Servers
+- **CIAB-GUAC**: An LXD container where Apache Guacamole, Tomcat, NGINX, MySQL and XRDP run. 
+- **CN1** : An LXD container where CIAB End-Users connect to their CIAB Ubuntu-Mate Remote Desktop, accessible via RDP using the CIAB Guacamole front-end.
 
 CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
     
@@ -40,30 +45,29 @@ The amount of memory, disk drive space, operating system on the local computers 
 
 The school would only need decent Network connectivity in regards to speed & reliability.
 
-However, as time and my efforts on CIAB continued I evolved its design beyond schools for use-cases in business, non-profits etc.
+However, as time and my efforts on CIAB continued I evolved CIAB's design beyond schools for use-cases in business, non-profits etc.
 
 CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
 
-There are 2 YouTube video's regarding CIAB (note these are a bit out of date but still useful overall):
+**There are 3 YouTube video's regarding CIAB v3**:
 
-[CIAB Remote Desktop Part 1 - Installation](https://www.youtube.com/watch?v=d361lS0FH8Y&t=1070s)
+[CIAB Remote Desktop System v3 - Introduction and Demo of Use](https://youtu.be/MUCXn7WoT3c)
 
-and
+[CIAB v3 Remote Desktop  System - Installation](https://youtu.be/VRmSvdSmoqI)
 
-[CIAB Remote Desktop Part 2 - Configuration and Use](https://www.youtube.com/watch?v=dotc5I2z9mI)
+[CIAB v3 Guacamole Configuration and Wrapup](https://youtu.be/neDFdP-UhzI)
 
+After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes.
 
-After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes:
+CIAB v3 utilizes the LXD Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   
 
-> $ lxc copy cn1 cn2 
-
-This 2.0 version also utilizes the recently added new Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container first where Guacamole will then process that User for further connections (ie to CN1) according to the Configurations made by the CIAB Admin.  
+This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container first where Guacamole will then process that User for further connections (ie to CN1) according to the Configurations made by the CIAB Admin.  
 
 If the CIAB Admin has configured that User for access to the CN1 Desktop Container or possibly other CNx containers that may have been configured on the CIAB "Host/Server" then the User will be presented with a menu to select which "connection" they want to log into.
 
-Since the **ciab-guac** container resides on the same private/internal 10.x.x.x subnet as the **cn1** container and any additional containers you clone from the original cn1, they can all inter-communicate with one another.   
+Since the **ciab-guac** container resides on the same private/internal 10.x.x.x subnet as the **cn1** container and any additional containers you clone from the original cn1 or to/from any CIAB Admin installed CIAB Web Applications can all inter-communicate with one another.   
 
-Also, any CIAB Web Applications the Admin installs will also be attached to this same 10.x.x.x network allowing validated CIAB Users logged into the Mate Desktop on CN1 to use their CN1 Mate Desktop's browser to access those Web applications.
+Any validated CIAB Users logged into the Mate Desktop on CN1 can use their CN1 Mate Desktop's browser to access installed CIAB Web applications.
 
 Depending on the Host Server's number of CPU core, Memory capacity and storage you could potentially have dozens or hundreds of cnX containers, each with its own Ubuntu-Mate Desktop.   This means that remote users can also be configured to potentially access and use any of those dozens of cnX Ubuntu-Mate Desktops by the Guacamole admin.
 
@@ -114,7 +118,7 @@ Direct Internet access **to** these applications & the LXD containers they run i
 
 If access to these Web Applications is desired there is a relatively easy configuration change which would enable such, so that users on the "internet" could access the Web Applications also while still being under the control/adminstration of the CIAB Administrator.   
 
-To enable Internet access to any installed CIAB Web Applications the administrator has to issue two commands for each installed application.   Both commands are related in that they will setup a *"chain" of Port Forwarding*.    First from the internet into the ciab-guac container and then for that port into the LXD container of the target CIAB Web Application.
+If the CIAB Admin desires to enable Internet access to any installed CIAB Web Applications the administrator has to issue two commands for each installed application.   Both commands are related in that they will setup a *"chain" of Port Forwarding*.    First from the internet into the ciab-guac container and then for that port into the LXD container of the target CIAB Web Application.
 
 Example for the Drupal CMS application lets say we want to use Port 8000 from the internet to access it.   From the Host server we would first issue the following:  
 > lxc config device add **ciab-guac** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:127.0.0.1:**8000**  
@@ -123,7 +127,7 @@ then *from inside the ciab-guac* container...
 
 NOTE:  the label "proxyport" is arbitrary and is just an identifier.   Port 8000 is also somewhat arbitrary in that you can choose any port that is **not a "well-known port"** an [IANA reserved port (ie 0 - 1023)](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml). 
 
-However, the various applications *do have access out to the Internet* and thus their functionality is not restricted.
+However, the various applications *do have access **outbound only** to the Internet* and thus their functionality is not restricted.
 
 But again, only CIAB Remote Desktop users logged into one of the LXD Remote Desktop LXD containers and using that
 container's Web Browser can access and log into these web applications.
@@ -137,7 +141,7 @@ _**Another big benefit involves Backups**_.
 A good thread on LXD backups that includes comments by Stephane Graber, the lead for the LXD project, [can be found here](
 https://discuss.linuxcontainers.org/t/backup-the-container-and-install-it-on-another-server/463/12)
 
-
+New to CIAB v3 is the addition of the CIAB MANO (Management and Orchestration) Tool based on LXDMosaic.   Using CIAB MANO the CIAB Admin can easily create/restore **snapshots** of any of the installed LXD containers whether they be part of CIAB itself -or- any of the CIAB Web Application containers.
 
 ## Important (PLEASE READ)
 
@@ -321,20 +325,7 @@ after completing this a CiAB Remote Desktop user can access any of the installed
 which is simpler to remember than the 10.x.x.x IP addresses of each application container.
 
 **NOTE**:  
-If you screw-up any of the CIAB Application installations (entered something wrong during installation) you, the CIAB Admin, can simply stop then delete that Application's LXD container and then reinstall it again!   
-
-Just open a terminal and execute:  
-> $ lxc stop <container/application name>  
-> $ lxc delete <container/application name>  
-
-Example - you entered something wrong with wordpress's installation
-
-> log into the **ciab-guac** container desktop  
-> open a terminal then..  
->  \$ lxc stop wordpress  
->  \$ lxc delete wordpress  
-
-Then reinstall wordpress by following the above CIAB Apps installation process agin and after running **ciab-apps-install.sh**  and select *wordpress* to reinstall it (_**Note**_: it may get a different IP address upon reinstallation).
+If you screw-up any of the CIAB Application installations (entered something wrong during installation) you, the CIAB Admin, can use the CIAB MANO tool to stop/delete that Application's LXD container.   Then the CIAB Admin can just reinstall that CIAB Web Application again!   
 
 ___
 Again...  there will be more Web Based Applications added in the future.
