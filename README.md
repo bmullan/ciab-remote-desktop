@@ -18,7 +18,7 @@ The initial installation configures four LXD containers:
 
 CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* because no plugins or client software are required!   
     
-**PLEASE REVIEW** this GitHub Repository _**[Issues](https://github.com/bmullan/ciab-remote-desktop/issues)**_ Section for **IMPORTANT** CIAB bug fix info and Use TIPS...!**
+**PLEASE REVIEW** this GitHub Repository _**[Issues](https://github.com/bmullan/ciab-remote-desktop/issues)**_ Section for **IMPORTANT** CIAB bug fix info and Use TIPS...!
 
 ---
 
