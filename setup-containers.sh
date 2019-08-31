@@ -601,7 +601,7 @@ echo
 echo
 echo "==========================={ CIAB Remote Desktop Installation complete! }============================="
 echo
-echo
+echo 
 echo
 echo "Point a Browser to your Host/Server and you should now be able to login to Guacamole and configure:"
 echo
