@@ -47,9 +47,9 @@ The school would only need decent Network connectivity in regards to speed & rel
 
 _**Today... CIAB has evolved in design beyond schools for use-cases in business, non-profits and even large wind energy plants.**_
 
-CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
+_CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host/Server whether a VM, physical server or Cloud instance._
 
-**There are 3 YouTube video's regarding CIAB v3**:
+_**Here are 3 YouTube video's regarding CIAB v3 which will help you understand and configure CIAB**_:
 
 [CIAB Remote Desktop System v3 - Introduction and Demo of Use](https://youtu.be/MUCXn7WoT3c)
 
