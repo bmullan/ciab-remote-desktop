@@ -11,7 +11,7 @@ if ! [ $(id -u) = 0 ]; then echo "Please run this script as either SUDO or ROOT 
 
 sudo apt install nginx -y
 
-# remove access via 8080 (tomcat old default)
+# remove access via 8080 (tomcat old default) 
 sudo ufw delete allow 8080
 
 # make a directory to hold SSL certs
