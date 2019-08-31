@@ -6,7 +6,7 @@
 deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic multiverse restricted main universe #Added by software-properties
 
-## Major bug fix updates produced after the final release of the
+## Major bug fix updates produced after the final release of the 
 ## distribution.
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse restricted main universe
