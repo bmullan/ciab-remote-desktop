@@ -57,9 +57,9 @@ _**Here are 3 YouTube video's regarding CIAB v3 which will help you understand a
 
 [CIAB v3 Guacamole Configuration and Wrapup](https://youtu.be/neDFdP-UhzI)
 
-After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container which only takes a 1-2 minutes.
+After installation you can very easily add more remote desktop server containers either on the same LXD Host/Server or on another LXD Host/Server just by copying the existing CN1 container (or all of CIAB) _which only takes a few minutes to do_.
 
-CIAB v3 utilizes the LXD Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called ciab-guac (where guacamole etc gets installed).   
+CIAB v3 utilizes the LXD Device Proxy capability that maps Port 443 on your Host Server (cloud or VM) to an LXD container called **ciab-guac** (where guacamole etc gets installed).   
 
 This means that after installation any CIAB Desktop user that points their Browser to the Host/Server will be redirected to the ciab-guac LXD container first where Guacamole will then process that User for further connections (ie to CN1) according to the Configurations made by the CIAB Admin.  
 
@@ -80,7 +80,7 @@ As you can infer from the above, configuring ciab-desktop on such a server could
 
 _If you download the Installation script source files and the CIAB-README.pdf documenation file using GitHub’s ZIP file format the resulting archive will be called - “**ciab-remote-desktop-master.zip**”_
 
-> NOTE:  *In mk-cn1-environment.sh there are commented-out sections that show what you need to do if you'd prefer a Desktop Environment (DE) other than Ubuntu-Mate.   Included are xubuntu (xfce4) and budgie DE.*
+> NOTE:  *In **mk-cn1-environment.sh** there are commented-out sections that show what you need to do if you'd prefer a Desktop Environment (DE) other than Ubuntu-Mate.   Included are xubuntu (xfce4) and budgie DE.*
 
 **The latest [CIAB Installation and Configuration Documentation is contained in the CIAB Repository's README.PDF file](https://github.com/bmullan/ciab-remote-desktop/blob/master/CIAB%20-%20README.pdf).**
 
