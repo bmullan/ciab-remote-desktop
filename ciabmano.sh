@@ -8,4 +8,3 @@
 # the lxdmosaic (ciabmano)
 
 chromium-browser https://ciabmano:3000
-
