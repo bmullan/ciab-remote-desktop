@@ -9,4 +9,3 @@ Name[en_US]=CIAB Web Applications Installer
 Exec=/opt/ciab-apps/ciab-apps-install.sh
 Name=CIAB Web Applications Installer
 
-
