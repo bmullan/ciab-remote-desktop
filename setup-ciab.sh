@@ -9,7 +9,7 @@ clear
 #
 # Purpose:
 #
-#   This script will install LXD onto this Host/server/VM/lxc container
+#  This script will install LXD onto this Host/server/VM/lxc container
 # 
 # IMPORTANT NOTE:  run this script as your normal non-sudo userID do NOT run as SUDO !!
 #
