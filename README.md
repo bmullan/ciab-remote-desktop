@@ -119,14 +119,13 @@ If access to these Web Applications is desired there is a relatively easy config
 
 If the CIAB Admin desires to enable Internet access to any installed CIAB Web Applications the administrator has to issue two commands for each installed application.   Both commands are related in that they will setup a *"chain" of Port Forwarding*.    First from the internet into the ciab-guac container and then for that port into the LXD container of the target CIAB Web Application.
 
-Example for the Drupal CMS application lets say we want to use Port 8000 from the internet to access it.   From the Host server we would first issue the following:  
-> lxc config device add **ciab-guac** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:127.0.0.1:**8000**  
-then *from inside the ciab-guac* container...   
+Example for the Drupal CMS application lets say we want to use Port 8000 from the internet to access it.   From the Host server we would issue the following:  
+
 > lxc config device add **drupal** proxyport**8000** proxy listen=tcp:0.0.0.0:**8000** connect=tcp:127.0.0.1:**8000**  
 
-NOTE:  the label "proxyport" is arbitrary and is just an identifier.   Port 8000 is also somewhat arbitrary in that you can choose any port that is **not a "well-known port"** an [IANA reserved port (ie 0 - 1023)](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml). 
+NOTE:  the label "proxyport" is only arbitrary and is just an identifier.   Port 8000 is also somewhat arbitrary in that you can choose any port that is **not a "well-known port"** an [IANA reserved port (ie 0 - 1023)](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml). 
 
-However, the various applications *do have access **outbound only** to the Internet* and thus their functionality is not restricted.
+However, the various CIAB Web applications do have access **outbound only** to the Internet* and thus their functionality is not restricted otherwise.
 
 But again, only CIAB Remote Desktop users logged into one of the LXD Remote Desktop LXD containers and using that
 container's Web Browser can access and log into these web applications.
