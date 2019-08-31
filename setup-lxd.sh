@@ -5,7 +5,7 @@ if [ $(id -u) = 0 ]; then echo "Please DO NOT run this script as either SUDO or 
 #================================================================================================================
 # setup-lxd.sh
 #
-# by brian mullan (bmullan.mail@gmail.com)
+# by brian mullan (bmullan.mail@gmail.com) 
 #
 # Purpose:
 #
