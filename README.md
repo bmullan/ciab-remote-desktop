@@ -26,7 +26,9 @@ CIAB is a ***clientless*** remote desktop system.  It's called *"clientless"* be
 
 ## What is the CIAB Remote Desktop System?
 
-CIAB Remote Desktop (CIAB – Cloud-In-A-Box) was originally envisioned around 2008 after I had the opportunity from my then employer Cisco Systems to spend nearly 18 months on a Fellowship with a non-profit here in North Carolina that provides the networking connectivity (NCREN) to all of the schools in North Carolina.
+_**Although, today... CIAB has evolved in design beyond schools for use-cases in business, non-profits and even large wind energy plants**_ it initially was a vision to help K-12 schools.
+
+**CIAB Remote Desktop (CIAB – Cloud-In-A-Box)** was originally envisioned around 2008 after I had the opportunity from my then employer Cisco Systems to spend nearly 18 months on a Fellowship with a non-profit here in North Carolina that provides the networking connectivity (NCREN) to all of the schools in North Carolina.
 
 At the time, cloud computing was just beginning and Amazon's AWS was practically the only game in town.   Having used AWS myself quite a bit by that time I tried to investigate how “cloud” could be used by K-12 schools as a possible low cost solution to the problems they faced such as:
 
@@ -38,14 +40,11 @@ Today the available computers now also include mixes of chromebooks, tablets as 
 
 The above circumstances and combination of problems often created a frustrating experience for teachers, students and parents.   So in 2008 I first starting thinking about how to bring together a Cloud based Remote Desktop solution that while not solving every problem, would try to adhere to the 80/20 rule of trying to solve 80% of the problems.
 
-CIAB Remote Desktop only requires a working HTML5 web browser 
-on your local PC/Laptop/Chromebook!  
+_**CIAB Remote Desktop only requires a working HTML5 web browser on your local PC/Laptop/Chromebook!**_  
 
 The amount of memory, disk drive space, operating system on the local computers *no longer matters* as the real User “desktops” are remote and the “server” they run on can be scaled in the “cloud” to as large as needed in size or number based on availability.  
 
 The school would only need decent Network connectivity in regards to speed & reliability.
-
-_**Today... CIAB has evolved in design beyond schools for use-cases in business, non-profits and even large wind energy plants.**_
 
 _CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host/Server whether a VM, physical server or Cloud instance._
 
