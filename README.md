@@ -139,7 +139,7 @@ _**Another big benefit involves Backups**_.
 A good thread on LXD backups that includes comments by Stephane Graber, the lead for the LXD project, [can be found here](
 https://discuss.linuxcontainers.org/t/backup-the-container-and-install-it-on-another-server/463/12)
 
-New to CIAB v3 is the addition of the CIAB MANO (Management and Orchestration) Tool based on LXDMosaic.   Using CIAB MANO the CIAB Admin can easily create/restore **snapshots** of any of the installed LXD containers whether they be part of CIAB itself -or- any of the CIAB Web Application containers.
+New to CIAB v3 is the addition of the CIAB MANO (Management and Orchestration) Tool [based on LXDMosaic](https://github.com/turtle0x1/LxdMosaic).   Using CIAB MANO the CIAB Admin can easily create/restore **snapshots** of any of the installed LXD containers whether they be part of CIAB itself -or- any of the CIAB Web Application containers.
 
 ## Important (PLEASE READ)
 
