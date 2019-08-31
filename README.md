@@ -145,8 +145,8 @@ New to CIAB v3 is the addition of the CIAB MANO (Management and Orchestration) T
 
 1. These applications are being provided for installation only.  The installer is designed to install any
    selected Application into an *existing* CIAB Remote Desktop environment!   
-2. *NO SUPPORT* for the Applications is provided except through the Application's original Author or Organization's website  
-   and any support mechanisms they have (forum, for-fee, mailer alias etc)!_  
+2. *NO SUPPORT* for the Applications is provided except through the Application's original Author or Organization's website and 
+   any support mechanisms they have (forum, for-fee, mailer alias etc)!_  
 3. *ANY & ALL future upgrades to these Applications are the SOLE responsibility of the Installer, the Organization the 
    applications are being installed for, and/or any Contracted Support arranged with the Application Authors/Creators or 3rd 
    Parties. So if you believe you will eventually need or want to upgrade an application & migrate the existing data please 
