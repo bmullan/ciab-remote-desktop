@@ -44,7 +44,7 @@ _**CIAB Remote Desktop only requires a working HTML5 web browser on your local P
 
 The amount of memory, disk drive space, operating system on the local computers *no longer matters* as the real User “desktops” are remote and the “server” they run on can be scaled in the “cloud” to as large as needed in size or number based on availability.  
 
-The school would only need decent Network connectivity in regards to speed & reliability.
+A school or business only needs decent Network connectivity in regards to speed & reliability as scalability can be attained via any of today's Cloud Infrastructures _(AWS, Digital Ocean, Google Cloud, Azure, Hetzner)_.
 
 _CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host/Server whether a VM, physical server or Cloud instance._
 
