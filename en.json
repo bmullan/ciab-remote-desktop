@@ -7,7 +7,7 @@
         "NAME"    : "CIAB Remote Desktop",
         "VERSION" : "${project.version}",
 
-        "ACTION_ACKNOWLEDGE"        : "OK",
+        "ACTION_ACKNOWLEDGE"        : "OK", 
         "ACTION_CANCEL"             : "Cancel",
         "ACTION_CLONE"              : "Clone",
         "ACTION_CONTINUE"           : "Continue",
