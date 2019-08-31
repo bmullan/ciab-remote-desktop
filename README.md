@@ -45,7 +45,7 @@ The amount of memory, disk drive space, operating system on the local computers 
 
 The school would only need decent Network connectivity in regards to speed & reliability.
 
-However, as time and my efforts on CIAB continued I evolved CIAB's design beyond schools for use-cases in business, non-profits etc.
+_**Today... CIAB has evolved in design beyond schools for use-cases in business, non-profits and even large wind energy plants.**_
 
 CIAB today implements its management tools and the end-user Desktops in LXD "unprivileged" containers running on any Ubuntu 18.04 LTS (long term support) Host Server/VM/Cloud instance.
 
