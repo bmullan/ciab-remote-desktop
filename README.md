@@ -125,7 +125,7 @@ Example for the Drupal CMS application lets say we want to use Port 8000 from th
 
 NOTE:  the label "proxyport" is only arbitrary and is just an identifier.   Port 8000 is also somewhat arbitrary in that you can choose any port that is **not a "well-known port"** an [IANA reserved port (ie 0 - 1023)](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml). 
 
-However, the various CIAB Web applications do have access **outbound only** to the Internet* and thus their functionality is not restricted otherwise.
+However, the various CIAB Web applications *do have access **outbound only** to the Internet* and thus their functionality is not restricted otherwise.
 
 But again, only CIAB Remote Desktop users logged into one of the LXD Remote Desktop LXD containers and using that
 container's Web Browser can access and log into these web applications.
