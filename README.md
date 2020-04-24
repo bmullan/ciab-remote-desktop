@@ -132,7 +132,7 @@ container's Web Browser can access and log into these web applications.
 
 _**Another big benefit involves Backups**_.  
 
-*Keep in mind if you have installed a lot of the CIAB Web Applications and users have input a lot of data into them, the backup may take a while to complete and you need to insure that the backup remote LXD server has appropriate free disk space.*
+*Keep in mind if you have installed a lot of the CIAB Web Applications and users have input a lot of data into them, the backup may take a while to complete and you need to ensure that the backup remote LXD server has appropriate free disk space.*
 
 **Reference**:  https://lxd.readthedocs.io/en/latest/backup/  
 
