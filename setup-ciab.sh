@@ -116,7 +116,12 @@ echo
 
 sudo adduser $USER lxd
 
+# Make sure LXD SNAP points to the right lxd directory...
+
+sudo ln -s /var/snap/lxd/common/lxd /var/lib/lxd
+
 newgrp lxd
+
 
 
 
