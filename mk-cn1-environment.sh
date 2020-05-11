@@ -161,6 +161,7 @@ sudo ufw allow 5353        # avahi
 pushd  .
 
 sudo add-apt-repository ppa:martinx/xrdp-next -y
+sudo apt update
 
 sleep 5
 
